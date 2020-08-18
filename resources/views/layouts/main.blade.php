@@ -48,9 +48,6 @@
 <link href="{{asset('css/loader.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-
-
 <div id="wrap">
 
     <!--Start PreLoader-->
@@ -69,8 +66,8 @@
 
     <header class="header-two">
         <div class="container">
-            <a href="index.html"><img class="logo2" src="images/logo2.png" alt=""></a>
-            <a href="index.html"><img class="logo-dark" src="images/logo-dark.png" alt=""></a>
+            <a href="main.blade.php"><img class="logo2" src="{{asset('images/logo2.png')}}" alt=""></a>
+            <a href="main.blade.php"><img class="logo-dark" src="{{asset('images/logo-dark.png')}}"  alt=""></a>
 
             <div class="cont-right">
 
@@ -129,7 +126,7 @@
 
                         <div class="cart-food">
                             <div class="detail">
-                                <img src="images/cart-food1.jpg" alt="">
+                                <img src="{{asset('images/cart-food1.jpg')}}" alt="">
                                 <div class="text">
                                     <a href="#.">Blanched Garlic</a>
                                     <p>1 x $35.00</p>
@@ -140,7 +137,7 @@
 
                         <div class="cart-food">
                             <div class="detail">
-                                <img src="images/cart-food2.jpg" alt="">
+                                <img src="{{asset('images/cart-food2.jpg')}}"  alt="">
                                 <div class="text">
                                     <a href="#.">GREEN CHILE </a>
                                     <p>2 x $40.00</p>
