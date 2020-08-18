@@ -245,7 +245,7 @@
 
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide">
 
-                    <img src="images/slides/banenr-img1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('images/slides/banenr-img1.jpg')}}"   alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 
 
@@ -259,7 +259,7 @@
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
                          data-endspeed="1000"
-                         style=""><img src="images/slides/flower.png" alt="" >
+                         style=""><img src="{{asset('images/slides/flower.png')}}" alt="" >
                     </div>
 
 
@@ -273,7 +273,7 @@
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
                          data-endspeed="1000"
-                         style="font-size:72px; z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">Art of Cooking
+                         style="font-size:72px; z-index: 5; white-space: nowrap;">Art of Cooking
                     </div>
 
 
@@ -288,7 +288,7 @@
                          data-splitout="none"
                          data-elementdelay="0.05"
                          data-endelementdelay="0.1"
-                         style="font-size:28px; z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><div style="text-align:left;">The Best restaurant in town</div>
+                         style="font-size:28px; z-index: 9;  white-space: nowrap;"><div style="text-align:left;">The Best restaurant in town</div>
                     </div>
 
                 </li>
@@ -296,7 +296,7 @@
 
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide">
 
-                    <img src="images/slides/banenr-img2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('images/slides/banenr-img2.jpg')}}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 
 
@@ -353,7 +353,7 @@
 
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500"  data-saveperformance="on"  data-title="Intro Slide">
 
-                    <img src="images/slides/banenr-img3.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('images/slides/banenr-img3.jpg')}}"   alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 
 
@@ -367,7 +367,7 @@
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
                          data-endspeed="1000"
-                         style=""><img src="images/slides/flower.png" alt="" >
+                         style=""><img  src="{{asset('images/slides/flower.png')}}" alt="" >
                     </div>
 
 
