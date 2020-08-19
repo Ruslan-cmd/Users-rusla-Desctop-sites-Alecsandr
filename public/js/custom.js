@@ -61,8 +61,6 @@ var scrollDistance = 355;		//Distance. Use smaller value for shorter scroll and 
 
 $window.on("mousewheel DOMMouseScroll", function(event){
 
-event.preventDefault();	
-
 var delta = event.originalEvent.wheelDelta/125 || -event.originalEvent.detail/3;
 var scrollTop = $window.scrollTop();
 var finalScroll = scrollTop - parseInt(delta*scrollDistance);
@@ -171,7 +169,7 @@ jQuery('body').delay(350).css({'overflow':'visible'});
 
 
 
-<!-- Back to Top -->
+
 jQuery(document).ready(function($){
 // browser window scroll (in pixels) after which the "back to top" link is shown
 var offset = 300,
@@ -561,7 +559,6 @@ function checkcontact(input)
 					
 	}
 
-	
 	
 	
 	
