@@ -311,7 +311,7 @@
                          data-splitout="none"
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
-                         style="font-size:72px; z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">quality food
+                         style="font-size:72px; z-index: 5; white-space: nowrap;">quality food
                     </div>
 
 
@@ -326,7 +326,7 @@
                          data-splitout="none"
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
-                         style="font-size:28px; z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><div style="text-align:left;">fine food & dining since 1880</div>
+                         style="font-size:28px; z-index: 9;  white-space: nowrap;"><div style="text-align:left;">fine food & dining since 1880</div>
                     </div>
 
 
@@ -341,7 +341,7 @@
                          data-splitout="none"
                          data-elementdelay="0.05"
                          data-endelementdelay="0.1"
-                         style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><div style="text-align:left;">
+                         style="z-index: 9;  white-space: nowrap;"><div style="text-align:left;">
                             <a href="our-story.html" class="read-more" style=" line-height: initial; color: #fff;  border:solid 2px #fff; text-transform: uppercase; font-weight: 500; letter-spacing: 0px; padding: 16px 36px; display: inline-block; font-size: 18px;">explore more</a>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
                          data-endspeed="1000"
-                         style="font-size:72px; z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">real taste real food
+                         style="font-size:72px; z-index: 5;  white-space: nowrap;">real taste real food
                     </div>
 
 
@@ -396,7 +396,7 @@
                          data-splitout="none"
                          data-elementdelay="0.05"
                          data-endelementdelay="0.1"
-                         style="font-size:28px; z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><div style="text-align:left;">the passion for the perfect taste</div>
+                         style="font-size:28px; z-index: 9;  white-space: nowrap;"><div style="text-align:left;">the passion for the perfect taste</div>
                     </div>
 
 
@@ -411,7 +411,7 @@
                          data-splitout="none"
                          data-elementdelay="0.05"
                          data-endelementdelay="0.1"
-                         style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><div style="text-align:left; ">
+                         style="z-index: 9;  white-space: nowrap;"><div style="text-align:left; ">
                             <a href="shop.html" class="read-more" style=" line-height: initial; color: #fff; border:solid 2px #fff; text-transform: uppercase; font-weight: 500; letter-spacing: 0px; padding: 16px 36px; display: inline-block; font-size: 18px;">online order</a>
                         </div>
                     </div>
