@@ -532,7 +532,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <img src="images/our-story.jpg" alt="">
+                        <img src="{{asset('images/our-story.jpg')}}" alt="">
                     </div>
 
                 </div>
@@ -577,7 +577,7 @@
                             <div class="row">
 
                                 <div class="col-md-4">
-                                    <img src="images/event-img.jpg" alt="">
+                                    <img src="{{asset('images/event-img.jpg')}}" alt="">
                                 </div>
 
                                 <div class="col-md-8">
@@ -611,7 +611,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <img src="images/today-special.jpg" alt="">
+                        <img src="{{asset('images/today-special.jpg')}}" alt="">
                     </div>
 
                     <div class="col-md-6">
@@ -738,9 +738,9 @@
                                 <div id="owl-demo" class="owl-carousel">
 
                                     <div class="post item">
-                                        <img class="lazyOwl" src="images/news-img1.jpg" alt="">
+                                        <img class="lazyOwl" src="{{asset('images/news-img1.jpg')}}"  alt="">
                                         <div class="detail">
-                                            <img src="images/news-cheff1.jpg" alt="">
+                                            <img src="{{asset('images/news-cheff1.jpg')}}" alt="">
                                             <h5><a href="blog-detail.html">Spicy Food</a></h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
                                             <span><i class="icon-clock"></i> Apr 22, 2016</span>
@@ -748,9 +748,9 @@
                                         </div>
                                     </div>
                                     <div class="post item">
-                                        <img class="lazyOwl" src="images/news-img2.jpg" alt="">
+                                        <img class="lazyOwl" src="{{asset('images/news-img2.jpg')}}"  alt="">
                                         <div class="detail">
-                                            <img src="images/news-cheff2.jpg" alt="">
+                                            <img src="{{asset('images/news-cheff2.jpg')}}" alt="">
                                             <h5><a href="blog-detail.html">Hot Cake</a></h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
                                             <span><i class="icon-clock"></i> Apr 09, 2016</span>
@@ -759,9 +759,9 @@
                                     </div>
 
                                     <div class="post item">
-                                        <img class="lazyOwl" src="images/news-img3.jpg" alt="">
+                                        <img class="lazyOwl" src="{{asset('images/news-img3.jpg')}}"  alt="">
                                         <div class="detail">
-                                            <img src="images/news-cheff3.jpg" alt="">
+                                            <img src="{{asset('images/news-cheff3.jpg')}}" alt="">
                                             <h5><a href="blog-detail.html">Fresh Salad</a></h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
                                             <span><i class="icon-clock"></i> Mar 28, 2016</span>
@@ -770,9 +770,9 @@
                                     </div>
 
                                     <div class="post item">
-                                        <img class="lazyOwl" src="images/news-img4.jpg" alt="">
+                                        <img class="lazyOwl" src="{{asset('images/news-img4.jpg')}}"  alt="">
                                         <div class="detail">
-                                            <img src="images/news-cheff2.jpg" alt="">
+                                            <img src="{{asset('images/news-cheff2.jpg')}}"  alt="">
                                             <h5><a href="blog-detail.html">Couple Area</a></h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
                                             <span><i class="icon-clock"></i> Mar 15, 2016</span>
@@ -781,9 +781,9 @@
                                     </div>
 
                                     <div class="post item">
-                                        <img class="lazyOwl" src="images/news-img5.jpg" alt="">
+                                        <img class="lazyOwl" src="{{asset('images/news-img5.jpg')}}"  alt="">
                                         <div class="detail">
-                                            <img src="images/news-cheff1.jpg" alt="">
+                                            <img src="{{asset('images/news-cheff1.jpg')}}" alt="">
                                             <h5><a href="blog-detail.html">Hand Picked Ingredients</a></h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eros...</p>
                                             <span><i class="icon-clock"></i> Mar 04, 2016</span>
@@ -831,7 +831,7 @@
                                         <div id="owl-demo2" class="owl-carousel">
 
                                             <div class="testi-sec">
-                                                <img src="images/testimonial-img1.jpg" alt="">
+                                                <img src="{{asset('images/testimonial-img1.jpg')}}" alt="">
                                                 <div class="height35"></div>
                                                 <span class="name">Christian Stewart</span>
                                                 <span class="work">Fashion Designer</span>
@@ -844,7 +844,7 @@
                                             </div>
 
                                             <div class="testi-sec">
-                                                <img src="images/testimonial-img2.jpg" alt="">
+                                                <img src="{{asset('images/testimonial-img2.jpg')}}"  alt="">
                                                 <div class="height35"></div>
                                                 <span class="name">johny Bravo</span>
                                                 <span class="work">TV Actor</span>
@@ -857,7 +857,7 @@
                                             </div>
 
                                             <div class="testi-sec">
-                                                <img src="images/testimonial-img3.jpg" alt="">
+                                                <img src="{{asset('images/testimonial-img3.jpg')}}" alt="">
                                                 <div class="height35"></div>
                                                 <span class="name">Rubica noi</span>
                                                 <span class="work">Founder Photography</span>
@@ -947,12 +947,12 @@
                         <div class="instagram">
                             <h4>Instagram</h4>
                             <div class="detail">
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img1.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img2.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img3.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img4.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img5.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img6.jpg" alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img1.jpg')}}" alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img2.jpg')}}"  alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img3.jpg')}}" alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img4.jpg')}}"  alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img5.jpg')}}"  alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="{{asset('images/instagram-img6.jpg')}}"  alt=""></a></div>
                             </div>
                         </div>
                     </div>
@@ -1044,7 +1044,7 @@
 
 
 
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
 <!-- SMOOTH SCROLL -->
 <script type="text/javascript" src="js/scroll-desktop.js"></script>
