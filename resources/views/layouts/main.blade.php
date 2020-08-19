@@ -1047,36 +1047,36 @@
 <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
 <!-- SMOOTH SCROLL -->
-<script type="text/javascript" src="js/scroll-desktop.js"></script>
-<script type="text/javascript" src="js/scroll-desktop-smooth.js"></script>
+<script type="text/javascript" src="{{asset('js/scroll-desktop.js')}}" ></script>
+<script type="text/javascript" src="{{asset('js/scroll-desktop-smooth.js')}}" ></script>
 
 <!-- START REVOLUTION SLIDER -->
-<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}" ></script>
+<script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}" ></script>
 
 <!-- Paralllax background -->
-<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
 
 <!-- Countdown -->
-<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript"  src="{{asset('js/countdown.js')}}"></script>
 
 <!-- Owl Carousel -->
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/cart-detail.js"></script>
+<script type="text/javascript" src="{{asset('js/owl.carousel.js')}}" ></script>
+<script type="text/javascript" src="{{asset('js/cart-detail.js')}}" ></script>
 
 <!-- Mobile Menu -->
-<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.mmenu.min.all.js')}}" ></script>
 
 <!-- Form Drop Dow -->
-<script type="text/javascript" src="js/form-dropdown.js"></script>
+<script type="text/javascript" src="{{asset('js/form-dropdown.js')}}" ></script>
 
 <!-- Date Picker and input hover -->
-<script type="text/javascript" src="js/classie.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="{{asset('js/classie.js')}}" ></script>
+<script type="text/javascript" src="{{asset('js/jquery-ui-1.10.3.custom.js')}}" ></script>
 
 
 <!-- All Scripts -->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{{asset('js/custom.js')}}" ></script>
 
 
 
