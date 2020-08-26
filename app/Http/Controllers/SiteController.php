@@ -10,3 +10,5 @@ class SiteController extends Controller
         return view('layouts/main');
     }
 }
+
+
