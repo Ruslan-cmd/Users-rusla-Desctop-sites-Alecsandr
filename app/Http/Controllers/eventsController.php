@@ -5,27 +5,18 @@ namespace App\Http\Controllers;
 use App\event;
 use Illuminate\Http\Request;
 
-$data = array(
-    'title'=>'New Project',
-    'description' => "This is description",
-
-);
-
-$projects = new event();
-$projects->create_project($data);
 
 class eventsController extends Controller
 {
 
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+
+        $shops = event::all();
+        return view('hello', compact('events'));
+
     }
 
     /**
