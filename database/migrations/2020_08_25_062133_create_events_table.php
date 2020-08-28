@@ -19,7 +19,7 @@ class CreateEventsTable extends Migration
             $table->date('date');
             $table->time('time');
             $table->binary( 'image');
-            $table->longText('description');
+            $table->mediumText('description');
 
 
 

@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-
-class eventsController extends Controller
+class EventsController extends Controller
 {
 
 
@@ -14,16 +14,14 @@ class eventsController extends Controller
     public function index()
     {
 
-        $shops = event::all();
-        return view('hello', compact('events'));
+       /* $title = DB::select('select title from events', [1]);
+        return view('event.index', ['users' => $title]);
+*/
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+
     public function create()
     {
         //

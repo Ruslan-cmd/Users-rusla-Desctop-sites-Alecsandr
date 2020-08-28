@@ -614,12 +614,7 @@
                         <img src="{{asset('images/today-special.jpg')}}" alt="">
                     </div>
 
-
-                    @foreach ($shops as $event)
-                        <div>{{ $event->text }}</div>
-                    @endforeach
-
-
+                    echo $events;
 
                     <div class="col-md-6">
                         <div class="special-food">
