@@ -544,6 +544,7 @@
 
 
         <!--Start Upcoming Event-->
+        @if($event)
         <div class="upcoming-event">
 
 
@@ -564,9 +565,9 @@
 
 
                         <ul id="example">
-                            <li><span class="days">00</span><p class="days_text">Days</p></li>
+                            <li><span class="days">{{now()->diffInDays($event->date)}}</span><p class="days_text">Days</p></li>
                             <li class="seperator">:</li>
-                            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+                            <li><span class="hours">{{now()->addDays(now()->diffInDays($event->date))->diffInRealHours($event->date)}}</span><p class="hours_text">Hours</p></li>
                             <li class="seperator">:</li>
                             <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
                             <li class="seperator">:</li>
@@ -582,8 +583,8 @@
 
                                 <div class="col-md-8">
                                     <div class="event-text">
-                                        <h6>How to Properly Use Spices</h6>
-                                        <span><i class="icon-clock"></i> April 22, 2016 / 8:30 pm - 11:00 pm</span>
+                                        <h6>{{$event->title}}</h6>
+                                        <span><i class="icon-clock"></i> {{$event->date->format('Y-m-d')}} / {{$event->time_start}} - {{$event->time_end}}</span>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...  <a href="event-detail.html">Read More</a></p>
                                         <a href="events.html" class="view-event">view all events</a>
                                     </div>
@@ -599,6 +600,7 @@
             </div>
 
         </div>
+        @endif
         <!--End Upcoming Event-->
 
 
