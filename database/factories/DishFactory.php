@@ -6,7 +6,7 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Dish::class, function (Faker $faker) {
     return [
-        'dish' => $faker->sentence(),
+        'dish' => $faker->sentence(3),
         'price' => $faker->numberBetween(1,1000),
     ];
 });

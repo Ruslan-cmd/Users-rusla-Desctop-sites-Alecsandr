@@ -571,7 +571,7 @@
                             <li class="seperator">:</li>
                             <li><span class="minutes">{{$eventData['untilMinutes']}}</span><p class="minutes_text">Minutes</p></li>
                             <li class="seperator">:</li>
-                            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+                            <li><span class="seconds">{{$eventData['untilSeconds']}}</span><p class="seconds_text">Seconds</p></li>
                         </ul>
 
                         <div class="event-detail">
@@ -608,7 +608,7 @@
 
 
 
-
+        @if($dishAndPrice)
         <!--Start Today Food-->
         <div class="today-food">
             <div class="container">
@@ -628,7 +628,7 @@
                             </div>
 
                             <div class="food-detail">
-                                <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
+                                <span class="title">{{$dishAndPrice['dish']}} <span class="price">{{$dishAndPrice['price']}}$</span></span>
                                 <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
                             </div>
 
@@ -640,9 +640,7 @@
             </div>
         </div>
         <!--End Today Food-->
-
-
-
+        @endif
 
 
         <!--Start Book Table-->
