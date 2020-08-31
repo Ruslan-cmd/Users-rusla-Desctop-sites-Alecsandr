@@ -544,7 +544,7 @@
 
 
         <!--Start Upcoming Event-->
-        @if($event)
+        @if($eventData)
         <div class="upcoming-event">
 
 
@@ -565,11 +565,11 @@
 
 
                         <ul id="example">
-                            <li><span class="days">{{now()->diffInDays($event->date)}}</span><p class="days_text">Days</p></li>
+                            <li><span class="days">{{$eventData['untilDays']}}</span><p class="days_text">Days</p></li>
                             <li class="seperator">:</li>
-                            <li><span class="hours">{{now()->addDays(now()->diffInDays($event->date))->diffInRealHours($event->date)}}</span><p class="hours_text">Hours</p></li>
+                            <li><span class="hours">{{$eventData['untilHours']}}</span><p class="hours_text">Hours</p></li>
                             <li class="seperator">:</li>
-                            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+                            <li><span class="minutes">{{$eventData['untilMinutes']}}</span><p class="minutes_text">Minutes</p></li>
                             <li class="seperator">:</li>
                             <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
                         </ul>
@@ -583,9 +583,11 @@
 
                                 <div class="col-md-8">
                                     <div class="event-text">
-                                        <h6>{{$event->title}}</h6>
-                                        <span><i class="icon-clock"></i> {{$event->date->format('Y-m-d')}} / {{$event->time_start}} - {{$event->time_end}}</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...  <a href="event-detail.html">Read More</a></p>
+                                        <h6>{{$eventData['title']}}</h6>
+                                        <span><i class="icon-clock"></i>
+                                            {{$eventData['date']}} / {{$eventData['time_start']}} - {{$eventData['time_end']}}
+                                        </span>
+                                        <p>{{$eventData['description']}}<a href="event-detail.html">Read More</a></p>
                                         <a href="events.html" class="view-event">view all events</a>
                                     </div>
                                 </div>

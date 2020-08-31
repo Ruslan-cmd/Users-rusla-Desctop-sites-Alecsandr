@@ -19,6 +19,9 @@ class Event extends Model
     ];
     /* protected $guarded = []; Равносильно $fillable для всех полей */
     public $timestamps = false; //Указать, иначе появятся доп столбцы в базе данных
+    protected $dates = [
+      'date',
+    ];  //Для работы формат с датой, распарсит и приведет к карбону
 }
 
 
