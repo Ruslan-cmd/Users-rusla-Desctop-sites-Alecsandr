@@ -8,7 +8,9 @@ class CreateDishMenuSectionTable extends Migration
 {
     public function up()
     {
-        Schema::create('_dish__menu__section', function (Blueprint $table) {
+        Schema::create('dish_menu_section', function (Blueprint $table) {
+
+            $table->id();
             $table->integer('Dish_id');
             $table->integer('Menu_section_id');
             $table->timestamps();

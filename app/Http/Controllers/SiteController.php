@@ -13,6 +13,8 @@ class SiteController extends Controller
             'eventData' => $this->getEventData(),
             'dishAndPrice' => $this->getDishAndPrice(),
             ]);
+
+
     }
     private function getEventData (){
         $event = Event::query()->where('date', '>=', now())->first();
@@ -46,6 +48,7 @@ class SiteController extends Controller
           'section' =>$section->section,
         ];
     }
+
 }
 
 

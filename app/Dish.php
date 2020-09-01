@@ -14,6 +14,6 @@ class Dish extends Model
 
     public function menu_sections()
     {
-        return $this->belongsToMany('App\Menu_section');
+        return $this->belongsToMany('App\Menu_section','_dish__menu__section','Dish_id','Menu_section_id');
     }
 }
