@@ -12,12 +12,13 @@ class SiteController extends Controller
         return view('layouts/main' , [
             'eventData' => $this->getEventData(),
             'dishAndPrice' => $this->getDishAndPrice(),
+
             ]);
-
-
     }
+
     private function getEventData (){
         $event = Event::query()->where('date', '>=', now())->first();
+
     return [
         'title' => $event->title,
         'description' => \Illuminate\Support\Str::limit($event->description,50),
@@ -45,10 +46,16 @@ class SiteController extends Controller
         $section = Menu_section::query()->first();
 
         return [
-          'section' =>$section->section,
+          'section' => $section->section,
         ];
     }
+    private function getOur(){
 
+        $section = Menu_section::query()->find(1);
+        $dish = $section->dish;
+        dd($dish -> section);
+
+    }
 }
 
 

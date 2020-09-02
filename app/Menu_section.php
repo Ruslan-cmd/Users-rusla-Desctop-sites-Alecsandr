@@ -13,6 +13,7 @@ class Menu_section extends Model
 
     public function dishes()
     {
-        return $this->belongsToMany('App\Dish','_dish__menu__section','Menu_section_id','Dish_id');
+        return $this->belongsToMany(Dish::class);
     }
 }
+//'App\Dish','dish_menu_section','Menu_section_id','Dish_id'
