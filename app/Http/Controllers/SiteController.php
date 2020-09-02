@@ -9,10 +9,10 @@ class SiteController extends Controller
 {
     public function index ()
     {
+
         return view('layouts/main' , [
             'eventData' => $this->getEventData(),
             'dishAndPrice' => $this->getDishAndPrice(),
-
             ]);
     }
 
@@ -51,9 +51,13 @@ class SiteController extends Controller
     }
     private function getOur(){
 
-        $section = Menu_section::query()->find(1);
-        $dish = $section->dish;
-        dd($dish -> section);
+        /*$dish->menu_sections()->attach([
+            $menu_section1->id,
+            $menu_section2>id,
+            $dish->cars,
+        ]);
+*/
+        $tags = Menu_section::find(1)->dishes;
 
     }
 }
