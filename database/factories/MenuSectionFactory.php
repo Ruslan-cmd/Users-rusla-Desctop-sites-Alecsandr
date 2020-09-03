@@ -4,7 +4,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(\App\Menu_Section::class, function (Faker $faker) {
+$factory->define(\App\MenuSection::class, function (Faker $faker) {
     return [
         'section' => $faker->word(),
     ];

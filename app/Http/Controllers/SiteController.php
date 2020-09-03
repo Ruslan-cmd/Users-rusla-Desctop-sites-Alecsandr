@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Event;
 use App\Dish;
-use App\Menu_section;
+use App\MenuSection;
 
 class SiteController extends Controller
 {
@@ -41,25 +41,7 @@ class SiteController extends Controller
             'price' => $dish->price,
         ];
     }
-    private function getSection(){
 
-        $section = Menu_section::query()->first();
-
-        return [
-          'section' => $section->section,
-        ];
-    }
-    private function getOur(){
-
-        /*$dish->menu_sections()->attach([
-            $menu_section1->id,
-            $menu_section2>id,
-            $dish->cars,
-        ]);
-*/
-        $tags = Menu_section::find(1)->dishes;
-
-    }
 }
 
 

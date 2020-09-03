@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Menu_section extends Model
+class MenuSection extends Model
 {
     protected $fillable = [
         'section',
@@ -16,4 +16,3 @@ class Menu_section extends Model
         return $this->belongsToMany(Dish::class);
     }
 }
-//'App\Dish','dish_menu_section','Menu_section_id','Dish_id'

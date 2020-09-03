@@ -10,10 +10,16 @@ class CreateDishMenuSectionTable extends Migration
     {
         Schema::create('dish_menu_section', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('dish_id')->unsigned()->index();
-            $table->foreign('dish_id')->references('id')->on('dishes')->onDelete('cascade');
-            $table->integer('menu_section_id')->unsigned()->index();
-            $table->foreign('menu_section_id')->references('id')->on('menu_sections')->onDelete('cascade');
+            $table->unsignedBigInteger('dish_id')->index();
+            $table->unsignedBigInteger('menu_section_id')->index();
+            $table->foreign('dish_id')
+                ->references('id')
+                ->on('dishes')
+                ->onDelete('cascade');
+            $table->foreign('menu_section_id')
+                ->references('id')
+                ->on('menu_sections')
+                ->onDelete('cascade');
         });
     }
 

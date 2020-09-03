@@ -618,8 +618,6 @@
                         <img src="{{asset('images/today-special.jpg')}}" alt="">
                     </div>
 
-                    echo $events;
-
                     <div class="col-md-6">
                         <div class="special-food">
                             <div class="main-title">
