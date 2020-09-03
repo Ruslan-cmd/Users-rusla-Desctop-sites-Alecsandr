@@ -12,9 +12,9 @@ class Dish extends Model
     ];
     public $timestamps = false; //Указать, иначе появятся доп столбцы в базе данных
 
-    public function menu_sections()
+    public function menuSections()
     {
-        return $this->belongsToMany(Menu_section::class);
+        return $this->belongsToMany(MenuSection::class);
     }
 
 }
