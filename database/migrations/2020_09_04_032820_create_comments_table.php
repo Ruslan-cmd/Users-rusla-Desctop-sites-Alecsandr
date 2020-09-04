@@ -6,24 +6,16 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCommentsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
+            $table->string('profession');
+            $table->mediumText('comment');
+            $table->unsignedInteger('rating');
         });
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('comments');
