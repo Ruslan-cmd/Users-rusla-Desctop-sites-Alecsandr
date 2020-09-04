@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use App\Dish;
 use App\MenuSection;
+use App\Comment;
 
 class SiteController extends Controller
 {
@@ -50,7 +51,17 @@ class SiteController extends Controller
             'sections' =>$dish->menuSections()->pluck('section'), //после метода - из коллеции моделей будет колекция строк
         ];
     }
-
+    private function getUserComment(){
+        $comment = Comment::query()
+            ->inRandomOrder()
+            ->first();
+        return [
+            'name' => $comment->name,
+            'profession' =>$comment->profession,
+            'comment' => $comment->comment,
+            'rating' => $comment->rating,
+        ];
+    }
 }
 
 
