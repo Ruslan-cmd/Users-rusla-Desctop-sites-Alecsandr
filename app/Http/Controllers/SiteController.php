@@ -12,12 +12,17 @@ class SiteController extends Controller
 
         return view('layouts/main' , [
             'eventData' => $this->getEventData(),
-            'dishAndPrice' => $this->getDishAndPrice(),
+            'specialDish' => $this->getDishAndPrice(),
             ]);
     }
 
     private function getEventData (){
         $event = Event::query()->where('date', '>=', now())->first();
+        if (!$event){
+            return [
+                'exist' => false,
+            ];
+        }
 
     return [
         'title' => $event->title,
@@ -29,16 +34,20 @@ class SiteController extends Controller
         'untilSeconds' => now()->addMinutes(now()->diffInRealMinutes($event->date))->diffInRealSeconds($event->date),
         'time_start' => $event->time_start,
         'time_end' => $event->time_end,
-
+        'exist' => true,
     ];
     }
     private function getDishAndPrice(){
 
-        $dish = Dish::query()->where('price','<=','100')->first();
+        $dish = Dish::query()
+            ->inRandomOrder('dish')
+            ->with('menuSections')
+            ->first();
 
         return [
             'dish' => $dish->dish,
             'price' => $dish->price,
+            'sections' =>$dish->menuSections()->pluck('section'), //после метода - из коллеции моделей будет колекция строк
         ];
     }
 

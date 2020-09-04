@@ -544,7 +544,7 @@
 
 
         <!--Start Upcoming Event-->
-        @if($eventData)
+        @if($eventData['exist'])
         <div class="upcoming-event">
 
 
@@ -608,7 +608,7 @@
 
 
 
-        @if($dishAndPrice)
+        @if($specialDish)
         <!--Start Today Food-->
         <div class="today-food">
             <div class="container">
@@ -626,8 +626,12 @@
                             </div>
 
                             <div class="food-detail">
-                                <span class="title">{{$dishAndPrice['dish']}} <span class="price">{{$dishAndPrice['price']}}$</span></span>
-                                <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
+                                <span class="title">{{$specialDish['dish']}} <span class="price">{{$specialDish['price']}}$</span></span>
+                                <span class="tags">
+                                    @foreach($specialDish['sections'] as $section)
+                                     {{$section}} @if (!$loop->last) /@endif
+                                        @endforeach
+                                </span>
                             </div>
 
                         </div>
