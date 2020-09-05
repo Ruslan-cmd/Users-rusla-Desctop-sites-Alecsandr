@@ -10,11 +10,13 @@ class SiteController extends Controller
 {
     public function index ()
     {
-
         return view('layouts/main' , [
             'eventData' => $this->getEventData(),
             'specialDish' => $this->getDishAndPrice(),
+            'comment' => $this->getUserComment(),
+
             ]);
+
     }
 
     private function getEventData (){
@@ -52,16 +54,36 @@ class SiteController extends Controller
         ];
     }
     private function getUserComment(){
-        $comment = Comment::query()
-            ->inRandomOrder()
-            ->first();
+        do {
+            $comment = Comment::query()
+                ->inRandomOrder()
+                ->first();
+            $comment1 = Comment::query()
+                ->inRandomOrder()
+                ->first();
+            $comment2 = Comment::query()
+                ->inRandomOrder()
+                ->first();
+        }
+        while ($comment != ($comment1 != $comment2));
+
         return [
             'name' => $comment->name,
-            'profession' =>$comment->profession,
+            'profession' => $comment->profession,
             'comment' => $comment->comment,
             'rating' => $comment->rating,
+            'name1' => $comment1->name,
+            'profession1' => $comment1->profession,
+            'comment1' => $comment1->comment,
+            'rating1' => $comment1->rating,
+            'name2' => $comment2->name,
+            'profession2' => $comment2->profession,
+            'comment2' => $comment2->comment,
+            'rating2' => $comment2->rating,
+
         ];
-    }
+}
+
 }
 
 
