@@ -839,39 +839,81 @@
                                             <div class="testi-sec">
                                                 <img src="{{asset('images/testimonial-img1.jpg')}}" alt="">
                                                 <div class="height35"></div>
-                                                <span class="name">Christian Stewart</span>
-                                                <span class="work">Fashion Designer</span>
+                                                <span class="name">{{$comment['name']}}</span>
+                                                <span class="work">{{$comment['profession']}}</span>
                                                 <div class="height20"></div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan. interdum hendrerit lacinia.</p>
+                                                <p> {{$comment['comment']}}</p>
                                                 <div class="height20"></div>
                                                 <div class="rating">
-                                                    <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i>
+                                                    @if  ($comment['rating'] == 1)
+                                                        <i class="icon-star3"></i>
+                                                        @endif
+                                                        @if  ($comment['rating'] == 2)
+                                                            <i class="icon-star3"></i><i class="icon-star3"></i>
+                                                        @endif
+                                                        @if  ($comment['rating'] == 3)
+                                                            <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                        @endif
+                                                        @if  ($comment['rating'] == 4)
+                                                            <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                        @endif
+                                                        @if  ($comment['rating'] == 5)
+                                                            <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                        @endif
                                                 </div>
                                             </div>
 
                                             <div class="testi-sec">
                                                 <img src="{{asset('images/testimonial-img2.jpg')}}"  alt="">
                                                 <div class="height35"></div>
-                                                <span class="name">johny Bravo</span>
-                                                <span class="work">TV Actor</span>
+                                                <span class="name">{{$comment['name1']}}</span>
+                                                <span class="work">{{$comment['profession1']}}</span>
                                                 <div class="height20"></div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan. interdum hendrerit lacinia Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan. </p>
+                                                <p> {{$comment['comment1']}} </p>
                                                 <div class="height20"></div>
                                                 <div class="rating">
-                                                    <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i>
+                                                    @if  ($comment['rating1'] == 1)
+                                                        <i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating1'] == 2)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating1'] == 3)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating1'] == 4)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating1'] == 5)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
                                                 </div>
                                             </div>
 
                                             <div class="testi-sec">
                                                 <img src="{{asset('images/testimonial-img3.jpg')}}" alt="">
                                                 <div class="height35"></div>
-                                                <span class="name">Rubica noi</span>
-                                                <span class="work">Founder Photography</span>
+                                                <span class="name">{{$comment['name2']}}</span>
+                                                <span class="work">{{$comment['profession2']}}</span>
                                                 <div class="height20"></div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan.</p>
+                                                <p> {{$comment['comment2']}}</p>
                                                 <div class="height20"></div>
                                                 <div class="rating">
-                                                    <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i>
+                                                    @if  ($comment['rating2'] == 1)
+                                                        <i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating2'] == 2)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating2'] == 3)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating2'] == 4)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
+                                                    @if  ($comment['rating2'] == 5)
+                                                        <i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i>
+                                                    @endif
                                                 </div>
                                             </div>
 
