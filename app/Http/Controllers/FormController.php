@@ -11,8 +11,8 @@ class FormController extends Controller
     public function index(Request $req)
     {
         $form = new Form();
-        $form->name = $req->input('name');
-        $form->date = $req->input('date');
+        $form->name = $req->input('reserv_name');
+        $form->date = $req->input('datepicker');
         $form->time_start_and = $req->input('time_start_and');
         $form->person = $req->input('person');
         $form->email = $req->input('email');
