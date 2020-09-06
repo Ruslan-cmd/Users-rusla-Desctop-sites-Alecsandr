@@ -13,14 +13,13 @@ class FormController extends Controller
         $form = new Form();
         $form->name = $req->input('reserv_name');
         $form->date = $req->input('datepicker');
-        $form->time_start_and = $req->input('time_start_and');
-        $form->person = $req->input('person');
-        $form->email = $req->input('email');
-        $form->phone = $req->input('phone');
+        $form->time_start_and = $req->input('reserv_time');
+        $form->person = $req->input('reserv_persons');
+        $form->email = $req->input('reserv_email');
+        $form->phone = $req->input('reserv_phone');
         $form->save();
-        //return redirect()->route('/layouts/main');
+        //return redirect()->route('layouts/main');
     }
-
     public function create()
     {
         //
