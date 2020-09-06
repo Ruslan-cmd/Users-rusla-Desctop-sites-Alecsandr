@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get( '/', 'SiteController@index');
-
+Route::post('/layouts/main/submit',function(){
+   dd( Request::all());
+})->name('contact-form');
 
 /*
 Route::get('/', function () {
