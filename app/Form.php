@@ -10,7 +10,7 @@ class Form extends Model
         'name',
         'date',
         'time_start',
-        'time_end',
+        'time_and',
         'person',
         'email',
         'phone',
