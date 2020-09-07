@@ -10,7 +10,14 @@ class FormController extends Controller
 {
     public function index(Request $req)
     {
+
         $form = new Form();
+        /*$name = Form::query()
+            ->where('name','==','reserv_name')->first();
+
+        if ($name != ''){
+            dd ($name);
+        }*/
         $form->name = $req->input('reserv_name');
         $form->date = $req->input('datepicker');
         $form->time_start_and = $req->input('reserv_time');
@@ -18,12 +25,12 @@ class FormController extends Controller
         $form->email = $req->input('reserv_email');
         $form->phone = $req->input('reserv_phone');
         $form->save();
+        //return redirect()->route('/');
 
-        return redirect()->route('/layouts/main/');
     }
     public function create()
     {
-        //
+
     }
 
     public function store(Request $request)
