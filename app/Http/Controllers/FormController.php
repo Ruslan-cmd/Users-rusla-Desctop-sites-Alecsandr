@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\http\Requests\PostRequest;
 use App\Form;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
@@ -10,14 +10,7 @@ class FormController extends Controller
 {
     public function index(Request $req)
     {
-
         $form = new Form();
-        /*$name = Form::query()
-            ->where('name','==','reserv_name')->first();
-
-        if ($name != ''){
-            dd ($name);
-        }*/
         $form->name = $req->input('reserv_name');
         $form->date = $req->input('datepicker');
         $form->time_start_and = $req->input('reserv_time');
