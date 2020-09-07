@@ -18,7 +18,8 @@ class FormController extends Controller
         $form->email = $req->input('reserv_email');
         $form->phone = $req->input('reserv_phone');
         $form->save();
-        //return redirect()->route('layouts/main');
+
+        return redirect()->route('/layouts/main/');
     }
     public function create()
     {
