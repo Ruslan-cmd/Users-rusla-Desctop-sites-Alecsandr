@@ -629,7 +629,7 @@
                                 <span class="title">{{$specialDish['dish']}} <span class="price">{{$specialDish['price']}}$</span></span>
                                 <span class="tags">
                                     @foreach($specialDish['sections'] as $section)
-                                     {{$section}} @if (!$loop->last) /@endif
+                                     {{$section}} @if (!$loop->last) / @endif
                                         @endforeach
                                 </span>
                             </div>
