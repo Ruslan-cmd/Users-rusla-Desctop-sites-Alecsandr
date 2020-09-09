@@ -12,6 +12,11 @@ class FormController extends Controller
     {
         $form = new Form();
         $form->name = $req->input('reserv_name');
+        if ($req->has('reserv_name' )) {
+            echo 'gibryd';
+        }
+
+        $form->name = $req->input('reserv_name');
         $form->date = $req->input('datepicker');
         $form->time_start_and = $req->input('reserv_time');
         $form->person = $req->input('reserv_persons');
