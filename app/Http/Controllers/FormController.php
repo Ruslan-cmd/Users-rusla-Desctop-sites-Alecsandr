@@ -8,23 +8,22 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
+    //if ($req->has('Your Name'))
     public function index(Request $req)
     {
+
         $form = new Form();
         $form->name = $req->input('reserv_name');
-        if ($req->has('reserv_name' )) {
-            echo 'gibryd';
-        }
-
-        $form->name = $req->input('reserv_name');
         $form->date = $req->input('datepicker');
+        $form->date ->format('Y-m-d');
         $form->time_start_and = $req->input('reserv_time');
         $form->person = $req->input('reserv_persons');
         $form->email = $req->input('reserv_email');
         $form->phone = $req->input('reserv_phone');
-        $form->save();
-        //return redirect()->route('/');
+        if (($form->name == 'Your Name') || ($form->date === 'Choose A Date')){echo 'ty pidor';}
+        else { $form->save();}
 
+        //return redirect()->route('/');
     }
     public function create()
     {

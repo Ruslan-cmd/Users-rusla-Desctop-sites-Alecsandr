@@ -669,10 +669,10 @@
 
                                     <form name="reserv_form" id="reserv_form" method="post" action="{{route('contact-form')}}">
                                         @csrf
-                                        <div class="col-md-6"><div class="field"><input name="reserv_name" id="reserv_name" type="text" value="Your Name" onblur="if(this.value == '') { this.value='Your Name'}" onfocus="if (this.value == 'Your Name') {this.value=''}" ></div></div>
+                                        <div class="col-md-6"><div class="field"><input name="reserv_name" id="reserv_name" type="text" value="Your Name" onblur="if(this.value == '') { this.value='Your Name'}" onfocus="if (this.value == 'Your Name') {this.value=''}" required></div></div>
 
                                         <div class="col-md-6"><div class="field">
-                                                <input type="text" id="datepicker"  placeholder="Appointment Date" onClick="" name="datepicker" value="Choose A Date" onblur="if(this.value == '') { this.value='Choose A Date'}" onfocus="if (this.value == 'Choose A Date') {this.value=''} "/>
+                                                <input type="text" id="datepicker"  placeholder="Appointment Date" onClick="" name="datepicker" value="Choose A Date" onblur="if(this.value == '') { this.value='Choose A Date'}" onfocus="if (this.value == 'Choose A Date') {this.value=''} " required/>
                                             </div></div>
 
                                         <div class="col-md-6"><div class="field basic-example2">
@@ -695,8 +695,8 @@
                                                     <option value="5">5+</option>
                                                 </select>
                                             </div></div>
-                                        <div class="col-md-6"><div class="field"><input name="reserv_email" id="reserv_email" type="text" value="Email Address" onblur="if (this.value == '') { this.value='Email Address'}" onfocus="if (this.value == 'Email Address') {this.value=''}"></div></div>
-                                        <div class="col-md-6"><div class="field"><input name="reserv_phone" id="reserv_phone" type="text" value="Phone No" onblur="if(this.value == '') { this.value='Phone No'}" onfocus="if (this.value == 'Phone No') {this.value=''}"></div></div>
+                                        <div class="col-md-6"><div class="field"><input name="reserv_email" id="reserv_email" type="text" value="Email Address" onblur="if (this.value == '') { this.value='Email Address'}" onfocus="if (this.value == 'Email Address') {this.value=''}" required></div></div>
+                                        <div class="col-md-6"><div class="field"><input name="reserv_phone" id="reserv_phone" type="text" value="Phone No" onblur="if(this.value == '') { this.value='Phone No'}" onfocus="if (this.value == 'Phone No') {this.value=''}" required ></div></div>
 
                                         <input name=" " type="submit" value="Book a table" onClick="validateReservation()">
                                     </form>
