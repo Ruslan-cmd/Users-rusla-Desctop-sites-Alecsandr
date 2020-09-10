@@ -20,7 +20,7 @@ class FormController extends Controller
         $form->person = $req->input('reserv_persons');
         $form->email = $req->input('reserv_email');
         $form->phone = $req->input('reserv_phone');
-        if (($form->name == 'Your Name') || ($form->date === 'Choose A Date')){echo 'ty pidor';}
+        if (($form->name == 'Your Name') || ($form->date === 'Choose A Date')){echo 'рп';}
         else { $form->save();}
 
         //return redirect()->route('/');
