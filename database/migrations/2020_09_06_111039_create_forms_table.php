@@ -13,7 +13,6 @@ class CreateFormsTable extends Migration
             $table->string('name');
             $table->date('date');
             $table->string('time_start_and');
-            //$table->time('time_end');
             $table->unsignedInteger('person');
             $table->string('email');
             $table->string('phone');

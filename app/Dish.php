@@ -16,5 +16,7 @@ class Dish extends Model
     {
         return $this->belongsToMany(MenuSection::class);
     }
-
+    public function mainSection(){
+        return $this->belongsTo(MainSection::class);
+    }
 }

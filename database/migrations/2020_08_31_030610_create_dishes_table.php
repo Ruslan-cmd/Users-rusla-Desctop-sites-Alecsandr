@@ -12,6 +12,9 @@ class CreateDishesTable extends Migration
             $table->id();
             $table->string('dish');
             $table->unsignedInteger('price');
+            $table->foreign('main_section_id')
+                ->references('id')->on('main_sections')
+                ->onDelete('cascade');
         });
     }
 
