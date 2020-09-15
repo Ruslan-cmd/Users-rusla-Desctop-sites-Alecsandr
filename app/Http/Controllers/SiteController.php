@@ -46,12 +46,15 @@ class SiteController extends Controller
         $dish = Dish::query()
             ->inRandomOrder('dish')
             ->with('menuSections')
+            ->with('dishes')
             ->first();
 
         return [
             'dish' => $dish->dish,
             'price' => $dish->price,
             'sections' => $dish->menuSections()->pluck('section'), //после метода - из коллеции моделей будет колекция строк
+            'maniSection' =>$dish->mainSection()->pluck('name_of_main_section')
+
         ];
     }
 
@@ -85,9 +88,5 @@ class SiteController extends Controller
         ];
     }
 
-   /* private function postUserComment()
-    {
- DB::table('events')->insert(['date'=>'21.05.2010','time'=>'23:45:24', 'title' => 'Lupita Smith','image'=>'NULL', 'description' => 'lupita@gmail.com' ]);
-    }*/
 }
 
