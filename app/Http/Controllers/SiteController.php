@@ -49,14 +49,14 @@ class SiteController extends Controller
             ->inRandomOrder('dish')
             //Запрос должен включать в себя закрузку секций этого блюда
             ->with('menuSections')
-            //->with('dishes')
             ->first();
 
         return [
             'dish' => $dish->dish,
             'price' => $dish->price,
-            'sections' => $dish->menuSections()->pluck('section'), //после метода - из коллеции моделей будет колекция строк
-
+            // pluck - берет 1 поле коллекции и по нему выводит информацию
+            // коллецию моделей превращает в коллецию строк которые сформированы из атрибута section
+            'sections' => $dish->menuSections()->pluck('section'),
         ];
     }
 
