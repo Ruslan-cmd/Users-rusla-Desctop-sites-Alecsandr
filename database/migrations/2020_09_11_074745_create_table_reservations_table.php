@@ -10,10 +10,12 @@ class CreateTableReservationsTable extends Migration
     {
         Schema::create('table_reservations', function (Blueprint $table) {
             $table->id();
+            //хранение значения базой в оперативной памяти
             $table->string('name')->index();
             $table->date('date')->index();
             $table->string('time_period');
             $table->unsignedTinyInteger('persons_count');
+           //email может быть нулевой, т к не у каждого он имеется
             $table->string('email')->nullable();
             $table->string('phone')->index();
             $table->timestamps();

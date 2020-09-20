@@ -1,4 +1,3 @@
-
 <div class="booking-form">
     <p class="error" id="reserv_error" style="display:none;"></p>
     <p class="success" id="reserv_success_msg" style="display:none;">Thank You! We will contact you shortly.</p>
@@ -34,7 +33,10 @@
 <div class="col-md-6"><div class="field"><input name="reserv_email" id="reserv_email" type="text" value="Email Address" onblur="if (this.value == '') { this.value='Email Address'}" onfocus="if (this.value == 'Email Address') {this.value=''}" required></div></div>
 <div class="col-md-6"><div class="field"><input name="reserv_phone" id="reserv_phone" type="text" value="Phone No" onblur="if(this.value == '') { this.value='Phone No'}" onfocus="if (this.value == 'Phone No') {this.value=''}" required ></div></div>
 
-<input name=" " type="submit" value="Book a table" onClick="validateReservation()">
+<input name=" " type="submit" value="Book a table" onClick="function validateReservation() {
+
+    }
+    validateReservation()">
 </form>
 
 </div>
