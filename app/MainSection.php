@@ -12,7 +12,6 @@ class MainSection extends Model
      public $timestamps = false; //Указать, иначе появятся доп столбцы в базе данных
 
      public function dishes(){
-     return $this->hasMany(Dish::class
-     );
+     return $this->hasMany(Dish::class);
  }
 }

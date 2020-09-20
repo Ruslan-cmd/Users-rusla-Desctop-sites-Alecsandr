@@ -8,6 +8,9 @@ use Faker\Generator as Faker;
 $factory->define(\App\Event::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence,
+        //генерация значения, которое будет происходить в будущем
+        //использование библиотеки Carbon
+
         'date' => $faker->date('Y-m-d', \Carbon\Carbon::now()->addMonths(4)->format('Y-m-d')),
         'time_start' => $faker->time(),
         'time_end' => $faker->time(),

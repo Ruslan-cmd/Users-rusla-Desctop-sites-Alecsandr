@@ -25,7 +25,10 @@ class Event extends Model //implements HasMedia
     public $timestamps = false; //Указать, иначе появятся доп столбцы в базе данных
     protected $dates = [
       'date',
-    ];  //Для работы формат с датой, распарсит и приведет к карбону
+    ];  //Для работы функции format с датой
+       //т.к.обращение идет к строке, и date является строкой
+    //а у строки нет метода format
+    //laravel рачпарсит и приведет к экземпляру Carbon
 }
 
 

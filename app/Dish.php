@@ -10,7 +10,7 @@ class Dish extends Model
         'dish',
         'price',
     ];
-    public $timestamps = false; //Указать, иначе появятся доп столбцы в базе данных
+    public $timestamps = false; //Указать, иначе sql выдаст ошибку при заполнении столбцов которых нет
 
     public function menuSections()
     {

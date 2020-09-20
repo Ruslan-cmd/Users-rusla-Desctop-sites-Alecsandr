@@ -19,6 +19,7 @@ class SiteController extends Controller
 
     private function getEventData()
     {
+        //Формирование в таблице events через модель Event
         $event = Event::query()->where('date', '>=', now())->first();
         if (!$event) {
             return [
@@ -31,6 +32,7 @@ class SiteController extends Controller
             'description' => \Illuminate\Support\Str::limit($event->description, 50),
             'date' => $event->date->format('Y-m-d'),
             'untilDays' => now()->diffInDays($event->date),
+            //прибавить колличество дней  - addDays до полночи и отнять до нужного времени от полночи - diffIN...
             'untilHours' => now()->addDays(now()->diffInDays($event->date))->diffInRealHours($event->date),
             'untilMinutes' => now()->addHours(now()->diffInRealHours($event->date))->diffInRealMinutes($event->date),
             'untilSeconds' => now()->addMinutes(now()->diffInRealMinutes($event->date))->diffInRealSeconds($event->date),
@@ -45,15 +47,15 @@ class SiteController extends Controller
 
         $dish = Dish::query()
             ->inRandomOrder('dish')
+            //Запрос должен включать в себя закрузку секций этого блюда
             ->with('menuSections')
-            ->with('dishes')
+            //->with('dishes')
             ->first();
 
         return [
             'dish' => $dish->dish,
             'price' => $dish->price,
             'sections' => $dish->menuSections()->pluck('section'), //после метода - из коллеции моделей будет колекция строк
-            'maniSection' =>$dish->mainSection()->pluck('name_of_main_section')
 
         ];
     }
