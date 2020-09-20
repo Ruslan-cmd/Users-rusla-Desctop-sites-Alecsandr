@@ -18,6 +18,7 @@ class CreateTableReservationsTable extends Migration
            //email может быть нулевой, т к не у каждого он имеется
             $table->string('email')->nullable();
             $table->string('phone')->index();
+           // отслеживание создания заявки
             $table->timestamps();
         });    }
 
