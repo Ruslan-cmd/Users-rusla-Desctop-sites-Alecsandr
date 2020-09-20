@@ -26,12 +26,12 @@ class TableReservationController extends Controller
           'phone' =>'required',
       ], [
               'name.required' => 'Необходимо указать имя',
-              'date.required' => 'Необходимо указать имя',
-              'time_period.required' => 'Необходимо указать имя',
-              'persons_count.required' => 'Необходимо указать имя',
-              'email.required' => 'Необходимо указать имя',
-              'phone.required' => 'Необходимо указать имя',
-              ]);
+              'date.required' => 'Необходимо выбрать дату',
+              'time_period.required' => 'Необходимо выбрать время',
+              'persons_count.required' => 'Необходимо указать колличество персон',
+              'email.required' => 'Необходимо указать email',
+              'phone.required' => 'Необходимо указать телефон',
+              ])->validate();
 
   }
 }
