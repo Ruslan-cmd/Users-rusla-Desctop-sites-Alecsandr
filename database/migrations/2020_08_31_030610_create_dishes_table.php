@@ -9,12 +9,13 @@ class CreateDishesTable extends Migration
     public function up()
     {
         Schema::create('dishes', function (Blueprint $table) {
-            $table->id();
-            $table->string('dish');
-            $table->unsignedInteger('price');
+            $table->increments('id');
+            $table->unsignedBigInteger('main_section_id')->index();
             $table->foreign('main_section_id')
                 ->references('id')->on('main_sections')
                 ->onDelete('cascade');
+            $table->string('dish');
+            $table->unsignedInteger('price');
         });
     }
 
