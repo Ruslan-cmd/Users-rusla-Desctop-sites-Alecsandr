@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//use Illuminate\Validation\Validator;
 
 class TableReservationController extends Controller
 {
-  public function index(){
+
+    public function store(){
+        $this->validateRequest();
+    }
+  private function validateRequest(){
       //глобальная функция находится в глобальном пространстве имен
       Validator::make(\request()->only(
       [
