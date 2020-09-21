@@ -9,7 +9,7 @@ class CreateDishesTable extends Migration
     public function up()
     {
         Schema::create('dishes', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->unsignedBigInteger('main_section_id')->index();
             $table->foreign('main_section_id')
                 ->references('id')->on('main_sections')

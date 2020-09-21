@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get( '/', 'SiteController@index');
-Route::post('reserve-table', 'TableReservationController@index')->name('reserve-table');
+Route::post('reserve-table', 'TableReservationController@store')->name('reserve-table');
 

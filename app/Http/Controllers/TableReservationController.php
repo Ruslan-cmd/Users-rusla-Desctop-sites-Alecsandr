@@ -2,14 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\TableReservation;
 use Illuminate\Http\Request;
 //use Illuminate\Validation\Validator;
 
 class TableReservationController extends Controller
 {
 
-    public function store(){
+    public function store()
+    {
         $this->validateRequest();
+        TableReservation::create(\request()->only(
+            [
+                'name',
+                'date',
+                'time_period',
+                'persons_count',
+                'email',
+                'phone',
+            ]));
+        //with - с каким сообщением нужно вернуться
+        return redirect()->back('#reservation_table_form')->with('Reservation_status','Спасибо! Мы свяэемся с вами как можно скорее...');
     }
   private function validateRequest(){
       //глобальная функция находится в глобальном пространстве имен
