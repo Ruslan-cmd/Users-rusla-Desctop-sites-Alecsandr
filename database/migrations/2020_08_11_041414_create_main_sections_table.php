@@ -10,9 +10,7 @@ class CreateMainSectionsTable extends Migration
     {
         Schema::create('main_sections', function (Blueprint $table) {
             $table->id();
-            $table->string('name_of_main_section', 10);
-
-
+            $table->text('name_of_main_section');
         });
     }
     public function down()

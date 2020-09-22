@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Dish;
 use App\MenuSection;
+use App\MainSection;
 
 
 class DishesSeeder extends Seeder
@@ -28,4 +29,15 @@ class DishesSeeder extends Seeder
         }
 
     }
+
+    /**
+     * @param Dish[]$dishes
+     */
+ private function assignMainSections($dishes){
+//для каждого блюда длае привязку кглвным секциям, причем главных секций не так много
+     foreach ($dishes as $dish) {
+         $mainsections = MainSection::inRandomOrder()->limit(1)->get();
+         $dish->mainSection()->sync($mainsections);
+     }
+ }
 }

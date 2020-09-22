@@ -8,7 +8,7 @@ class MainSectionSeeder extends Seeder
 
     public function run()
     {
-      factory(\App\MenuSection::class, 4) ->create();
+      factory(\App\MainSection::class, 5) ->create();
 
     }
 
