@@ -1041,7 +1041,6 @@
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="257" parent="234" name="dish">
@@ -1056,7 +1055,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="259" parent="234" name="dishes_main_section_id_index">
+    <index id="259" parent="234" name="dishes_main_section_id_foreign">
       <ColNames>main_section_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1070,7 +1069,6 @@
       <RefSchemaName>homestead</RefSchemaName>
       <RefTableName>main_sections</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="262" parent="235" name="id">
       <Position>1</Position>
