@@ -2,13 +2,12 @@
     @if ($errors->any())
         @foreach ($errors->all() as $message)
         <p class="error" style="color:red;margin-bottom:10px">
-
             {{$message}}
         </p>
         @endforeach
         @endif
     @if (session('reservation_status'))
-    <p class="success" id="reserv_success_msg">{{session('reservation_status'}}</p>
+    <p class="success" id="reserv_success_msg">{{session('reservation_status')}}</p>
     @endif
     <form  method="post" action="{{route('reserve-table')}}">
 @csrf

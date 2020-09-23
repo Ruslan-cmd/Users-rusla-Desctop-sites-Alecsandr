@@ -12,7 +12,7 @@ class DishesSeeder extends Seeder
     {
         $dishes = factory(\App\Dish::class, 30)->create();
         $this->assignSections($dishes);
-        $this->assignMainSections($dishes);
+       // $this->assignMainSections($dishes);
     }
 
     /**
@@ -31,13 +31,13 @@ class DishesSeeder extends Seeder
 
     }
 
-    /**
-     * @param Dish[]$dishes
-     */
- private function assignMainSections($dishes){
-     foreach ($dishes as $dish) {
-         $mainsections = MainSection::inRandomOrder()->limit(1)->get();
-         $dish->mainSection()->associate($mainsections)->save();
-     }
- }
+  //  /**
+  //   * @param Dish[]$dishes
+   //  */
+ //private function assignMainSections($dishes){
+ //    foreach ($dishes as $dish) {
+  //       $mainsections = MainSection::inRandomOrder()->limit(1)->get();
+  //       $dish->mainSection()->associate($mainsections)->save();
+  //   }
+ //}
 }

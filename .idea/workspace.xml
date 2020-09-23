@@ -7,8 +7,10 @@
     <list default="true" id="6380a2ad-27f5-4a81-93f1-e88b7dffd69d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DishesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DishesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,19 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Dish.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/seeds/DishesSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="-56">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding>
                 <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
@@ -73,28 +66,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/dishes">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/main_sections">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/factories/DishFactory.php">
+        <entry file="file://$PROJECT_DIR$/database/factories/MainSectionFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -102,19 +77,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+            <state relative-caret-position="289">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/MainSectionSeeder.php">
+        <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/events">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
-                <element signature="e#7#38#0#PHP" expanded="true" />
+                <element signature="e#40#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_02_040213_create_dish_menu_section_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding>
+                <element signature="e#7#52#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,8 +208,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_09_11_074745_create_table_reservations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_09_11_041414_create_main_sections_table.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" />
         <option value="$PROJECT_DIR$/app/MainSection.php" />
         <option value="$PROJECT_DIR$/app/Dish.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -212,8 +215,10 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_08_11_041414_create_main_sections_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_09_02_040213_create_dish_menu_section_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/MainSectionSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/DishesSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" />
       </list>
     </option>
   </component>
@@ -351,7 +356,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -442,6 +446,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,21 +508,8 @@
       <workItem from="1600582463730" duration="21353000" />
       <workItem from="1600654660955" duration="15439000" />
       <workItem from="1600736449561" duration="10849000" />
-      <workItem from="1600755305415" duration="5348000" />
-    </task>
-    <task id="LOCAL-00026" summary="default">
-      <created>1598841506966</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1598841506966</updated>
-    </task>
-    <task id="LOCAL-00027" summary="default">
-      <created>1598847893423</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1598847893423</updated>
+      <workItem from="1600755305415" duration="7481000" />
+      <workItem from="1600825675568" duration="5626000" />
     </task>
     <task id="LOCAL-00028" summary="default">
       <created>1598865041520</created>
@@ -848,11 +840,25 @@
       <option name="project" value="LOCAL" />
       <updated>1600751879813</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="default">
+      <created>1600763464137</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1600763464137</updated>
+    </task>
+    <task id="LOCAL-00076" summary="default">
+      <created>1600767112070</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1600767112070</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429019000" />
+    <option name="totallyTimeSpent" value="436778000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -867,8 +873,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7705224" visible="true" weight="0.16308725" />
-      <window_info id="Structure" order="1" sideWeight="0.22947761" side_tool="true" visible="true" weight="0.16308725" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76865673" visible="true" weight="0.16510066" />
+      <window_info id="Structure" order="1" sideWeight="0.23134328" side_tool="true" visible="true" weight="0.16510066" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.6449664" weight="0.31805158" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -1034,26 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/forms">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1106,27 +1092,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/events">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/dish_menu_section">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_02_040213_create_dish_menu_section_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,13 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/MainSectionFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/MenuSectionFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1195,6 +1157,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Dish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/dishes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/main_sections">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/DishFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/MainSectionFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/MenuSectionsSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1209,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Dish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/MainSection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1223,40 +1213,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/dishes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/DishFactory.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_02_040213_create_dish_menu_section_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/main_sections">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="187">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#7#52#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DishesSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="-56">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac/schema/homestead/table/events">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="e#40#65#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
