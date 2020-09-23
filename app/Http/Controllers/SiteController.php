@@ -62,7 +62,7 @@ class SiteController extends Controller
 
     private function getUserComment()
     {
-       return Comment::query()->inRandomOrder()->limit(3)->get();
+       return Comment::query()->limit(3)->get();
 
         /*do {
             $comment = Comment::query()

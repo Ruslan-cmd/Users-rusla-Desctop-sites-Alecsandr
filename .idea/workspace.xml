@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6380a2ad-27f5-4a81-93f1-e88b7dffd69d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="808" column="79" lean-forward="true" selection-start-line="808" selection-start-column="79" selection-end-line="808" selection-end-column="79" />
+            <state relative-caret-position="590">
+              <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
             </state>
           </provider>
         </entry>
@@ -510,14 +507,7 @@
       <workItem from="1600654660955" duration="15439000" />
       <workItem from="1600736449561" duration="10849000" />
       <workItem from="1600755305415" duration="7481000" />
-      <workItem from="1600825675568" duration="10989000" />
-    </task>
-    <task id="LOCAL-00029" summary="default">
-      <created>1598892882882</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1598892882882</updated>
+      <workItem from="1600825675568" duration="11297000" />
     </task>
     <task id="LOCAL-00030" summary="default">
       <created>1598893326190</created>
@@ -855,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600834368130</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="default">
+      <created>1600847139999</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1600847139999</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442141000" />
+    <option name="totallyTimeSpent" value="442449000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1260,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="808" column="79" lean-forward="true" selection-start-line="808" selection-start-column="79" selection-end-line="808" selection-end-column="79" />
+        <state relative-caret-position="590">
+          <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
         </state>
       </provider>
     </entry>
