@@ -6,9 +6,6 @@ use App\TableReservation;
 use Illuminate\Http\Request;
 use Validator;
 
-
-//use Illuminate\Validation\Validator;
-
 class TableReservationController extends Controller
 {
 
