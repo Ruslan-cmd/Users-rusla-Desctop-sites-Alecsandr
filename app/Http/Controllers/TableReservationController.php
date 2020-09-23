@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\TableReservation;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Validator;
+use Validator;
+
 
 //use Illuminate\Validation\Validator;
 
@@ -53,6 +54,5 @@ class TableReservationController extends Controller
               'email.required' => 'Необходимо указать email',
               'phone.required' => 'Необходимо указать телефон',
               ])->validate();
-
   }
 }

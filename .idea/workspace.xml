@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6380a2ad-27f5-4a81-93f1-e88b7dffd69d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df4e21c3-5587-4a3e-9afb-7f6b95a9a4ac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DishesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DishesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,15 +64,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/factories/MainSectionFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -101,14 +90,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="403">
+              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
               <folding>
                 <element signature="e#40#65#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+              <folding>
+                <element signature="e#39#53#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="808" column="79" lean-forward="true" selection-start-line="808" selection-start-column="79" selection-end-line="808" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -121,15 +131,6 @@
               <folding>
                 <element signature="e#7#52#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/MenuSectionsSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -203,8 +204,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/database/factories/EventFactory.php" />
         <option value="$PROJECT_DIR$/app/Event.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_09_11_074745_create_table_reservations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_09_11_041414_create_main_sections_table.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -219,6 +218,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_08_31_030610_create_dishes_table.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/table_reservation_form.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
       </list>
     </option>
   </component>
@@ -509,14 +510,7 @@
       <workItem from="1600654660955" duration="15439000" />
       <workItem from="1600736449561" duration="10849000" />
       <workItem from="1600755305415" duration="7481000" />
-      <workItem from="1600825675568" duration="5626000" />
-    </task>
-    <task id="LOCAL-00028" summary="default">
-      <created>1598865041520</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1598865041520</updated>
+      <workItem from="1600825675568" duration="10989000" />
     </task>
     <task id="LOCAL-00029" summary="default">
       <created>1598892882882</created>
@@ -854,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1600767112070</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="default">
+      <created>1600834368130</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1600834368130</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436778000" />
+    <option name="totallyTimeSpent" value="442141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -873,7 +874,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76865673" visible="true" weight="0.16510066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76865673" visible="true" weight="0.16510066" />
       <window_info id="Structure" order="1" sideWeight="0.23134328" side_tool="true" visible="true" weight="0.16510066" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.6449664" weight="0.31805158" />
@@ -887,7 +888,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32884902" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6684564" visible="true" weight="0.2407932" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6684564" visible="true" weight="0.2407932" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.33154362" side_tool="true" weight="0.33994335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -949,13 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="620" column="25" lean-forward="true" selection-start-line="620" selection-start-column="25" selection-end-line="620" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1123,16 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <element signature="e#39#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/EventFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1256,11 +1240,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TableReservationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="403">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
           <folding>
             <element signature="e#40#65#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <folding>
+            <element signature="e#39#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="808" column="79" lean-forward="true" selection-start-line="808" selection-start-column="79" selection-end-line="808" selection-end-column="79" />
         </state>
       </provider>
     </entry>

@@ -12,7 +12,7 @@ class SiteController extends Controller
         return view('layouts/main', [
             'eventData' => $this->getEventData(),
             'specialDish' => $this->getDishAndPrice(),
-            'comment' => $this->getUserComment(),
+            'comments' => $this->getUserComment(),
         ]);
 
     }
@@ -62,7 +62,9 @@ class SiteController extends Controller
 
     private function getUserComment()
     {
-        do {
+       return Comment::query()->inRandomOrder()->limit(3)->get();
+
+        /*do {
             $comment = Comment::query()
                 ->inRandomOrder()
                 ->first();
@@ -87,7 +89,7 @@ class SiteController extends Controller
             'profession2' => $comment2->profession,
             'comment2' => $comment2->comment,
             'rating2' => $comment2->rating,
-        ];
+        ]; */
     }
 
 }
