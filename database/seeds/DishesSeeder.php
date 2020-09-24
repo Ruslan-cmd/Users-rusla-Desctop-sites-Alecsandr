@@ -11,8 +11,9 @@ class DishesSeeder extends Seeder
     public function run()
     {
         $dishes = factory(\App\Dish::class, 30)->create();
+       // $this->assignMainSections($dishes);
         $this->assignSections($dishes);
-        $this->assignMainSections($dishes);
+
     }
 
     /**
@@ -31,14 +32,14 @@ class DishesSeeder extends Seeder
 
     }
 
-    /**
-    * @param Dish[]$dishes
-    */
- private function assignMainSections($dishes){
+//    /**
+ //   * @param Dish[]$dishes
+ //   */
+ /*   private function assignMainSections($dishes){
 foreach ($dishes as $dish) {
-      $mainsections = MainSection::limit(1)->get();
-     //$dish->mainSection()->first($mainsections);
-    $dish-> main_section_id = $mainsections;
+     $mainsections = MainSection::limit(1)->get();
+     $dish->mainSection()->first($mainsections);
+
      }
- }
+ }*/
 }

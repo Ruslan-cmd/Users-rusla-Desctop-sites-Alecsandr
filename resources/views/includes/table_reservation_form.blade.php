@@ -12,14 +12,14 @@
     <form  method="post" action="{{route('reserve-table')}}">
 @csrf
 <div class="col-md-6"><div class="field">
-        <input name="name" type="text" placeholder="Имя" value="{{/*введенные в поле значения не теряются*/ old('name') }}" required></div></div>
+        <input name="name" type="text"  value="{{old('name') }}"   required></div></div>
 
 <div class="col-md-6"><div class="field">
-        <input type="text"  placeholder="Желаемая дата" name="date" value="{{old('date')}}" required/>
+        <input type="text"   placeholder="Желаемая дата" name="date" @if (old('date')!='') value="{{old('date')}}" @else  value="Введите желаемую дату" @endif  required/>
     </div></div>
 
 <div class="col-md-6"><div class="field basic-example2">
-        <select class="basic-example"  name="time_period">
+        <select class="basic-example"  name="time_period" required>
             <option value="">Выберите время</option>
 
             <option @if(old('time_period') === '9:00am to 12:00pm') selected @endif value="9:00am to 12:00pm">9:00 - 12:00</option>
