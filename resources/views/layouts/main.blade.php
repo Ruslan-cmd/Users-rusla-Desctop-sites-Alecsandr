@@ -1,4 +1,4 @@
-<head>
+<head id="head">
 <title>Welcome to Pearl</title>
 
 <meta name="keywords" content="">
@@ -1002,7 +1002,7 @@
 
 
 
-
+<div id="scripts">
 <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
 <!-- SMOOTH SCROLL -->
@@ -1036,7 +1036,7 @@
 
 <!-- All Scripts -->
 <script type="text/javascript" src="{{asset('js/custom.js')}}" ></script>
-
+</div>
 
 
 
