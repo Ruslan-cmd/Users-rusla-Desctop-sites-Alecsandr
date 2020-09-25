@@ -64,7 +64,7 @@
 
     <!--Start Header-->
 
-    <header class="header-two">
+    <header class="header-two" id="header">
         <div class="container">
             <a href="main.blade.php"><img class="logo2" src="{{asset('images/logo2.png')}}" alt=""></a>
             <a href="main.blade.php"><img class="logo-dark" src="{{asset('images/logo-dark.png')}}"  alt=""></a>
@@ -82,7 +82,7 @@
 
                         <li><a href="#.">Menu</a>
                             <ul class="submenu">
-                                <li> <a href="menu.html">menu 1</a> </li>
+                                <li> <a href="{{asset('menu.html')}}">menu 1</a> </li>
                                 <li> <a href="menu2.html">menu 2</a> </li>
                                 <li> <a href="menu3.html">menu 3</a> </li>
                             </ul>
@@ -174,7 +174,7 @@
 
 
     <!-- Mobile Menu Start -->
-    <div class="container">
+    <div class="container" id="container">
         <div id="page">
             <header class="header">
                 <a href="#menu"></a>
@@ -225,12 +225,6 @@
         </div>
     </div>
     <!-- Mobile Menu End -->
-
-
-
-
-
-
 
 
 
