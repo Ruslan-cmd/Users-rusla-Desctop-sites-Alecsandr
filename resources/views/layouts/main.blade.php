@@ -82,7 +82,7 @@
 
                         <li><a href="#.">Menu</a>
                             <ul class="submenu">
-                                <li> <a href="{{asset('menu.html')}}">menu 1</a> </li>
+                                <li> <a href="{{route('menu')}}">menu 1</a> </li>
                                 <li> <a href="menu2.html">menu 2</a> </li>
                                 <li> <a href="menu3.html">menu 3</a> </li>
                             </ul>
