@@ -10,16 +10,16 @@
     <p class="success" id="reserv_success_msg">{{session('reservation_status')}}</p>
     @endif
     <form  method="post" action="{{route('reserve-table')}}">
-@csrf
+    @csrf
 <div class="col-md-6"><div class="field">
-        <input name="name" type="text"  value="{{old('name') }}"   required></div></div>
+        <input name="name" type="text"  value="{{old('name' , 'Введите имя') }}"></div></div>
 
 <div class="col-md-6"><div class="field">
-        <input type="text"   placeholder="Желаемая дата" name="date" @if (old('date')!='') value="{{old('date')}}" @else  value="Введите желаемую дату" @endif  required/>
+        <input type="text"   placeholder="Желаемая дата" name="date" value="{{old('date' , 'Введите желаемую дату')}}"/>
     </div></div>
 
 <div class="col-md-6"><div class="field basic-example2">
-        <select class="basic-example"  name="time_period" required>
+        <select class="basic-example"  name="time_period">
             <option value="">Выберите время</option>
 
             <option @if(old('time_period') === '9:00am to 12:00pm') selected @endif value="9:00am to 12:00pm">9:00 - 12:00</option>
@@ -39,11 +39,11 @@
             <option @if(old('persons_count') === '5') selected @endif value="5">5+</option>
         </select>
     </div></div>
-<div class="col-md-6"><div class="field"><input name="email" type="text" placeholder="Email" value="{{old('email')}}" required ></div></div>
+<div class="col-md-6"><div class="field"><input name="email" type="text" placeholder="Email" value="{{old('email' , 'Введите email')}}"></div></div>
 
  <div class="col-md-6">
      <div class = "field">
-         <input name="phone" type="text" placeholder="Телефон" value="{{old('phone')}}" required></div>
+         <input name="phone" type="text" placeholder="Телефон" value="{{old('phone' , 'Введите телефон')}}"></div>
  </div>
 
 
