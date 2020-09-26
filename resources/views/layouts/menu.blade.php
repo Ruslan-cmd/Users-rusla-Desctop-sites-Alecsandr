@@ -1,4 +1,52 @@
-@include('head')
+<head id="head">
+    <title>Welcome to Pearl</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="icon" type="image/png"  href="{{asset('images/favicon-pearl.png')}}">
+
+    <!--main file-->
+    <link  href="{{asset('css/pearl-restaurant.css')}}"  rel="stylesheet" type="text/css">
+
+    <!--Medical Guide Icons-->
+    <link  href="{{asset('fonts/pearl-icons.css')}}"  rel="stylesheet" type="text/css">
+
+    <!-- Default Color-->
+    <link href="{{asset('css/default-color.css')}}"  rel="stylesheet" id="color"  type="text/css">
+
+    <!--bootstrap-->
+    <link href="{{asset('css/bootstrap.css')}}"  rel="stylesheet" type="text/css">
+
+    <!--Dropmenu-->
+    <link href="{{asset('css/dropmenu.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Sticky Header-->
+    <link href="{{asset('css/sticky-header.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Sticky Countdown-->
+    <link href="{{asset('css/countdown.css')}}" rel="stylesheet" type="text/css">
+
+    <!--revolution-->
+    <link href="{{asset('css/settings.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/extralayers.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Owl Carousel-->
+    <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Date Picker-->
+    <link href="{{asset('css/date-pick.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Form Dropdown-->
+    <link href="{{asset('css/form-dropdown.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Mobile Menu -->
+    <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.mmenu.all.css')}}" />
+    <!--PreLoader-->
+    <link href="{{asset('css/loader.css')}}" rel="stylesheet" type="text/css">
+</head>
 <body>
 <div id="wrap">
 
