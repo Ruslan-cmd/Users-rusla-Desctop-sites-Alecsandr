@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6380a2ad-27f5-4a81-93f1-e88b7dffd69d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,11 +69,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="188">
+              <caret line="998" lean-forward="true" selection-start-line="998" selection-end-line="1032" selection-end-column="6" />
               <folding>
                 <element signature="n#head#0;n#!!top" />
-                <element signature="n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#!!top" />
                 <element signature="n#div#1;n#body#0;n#!!top" />
                 <element signature="n#script#0;n#body#0;n#!!top" />
                 <element signature="n#script#1;n#body#0;n#!!top" />
@@ -86,14 +90,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="50" column="15" lean-forward="true" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+            <state relative-caret-position="103">
+              <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
               <folding>
                 <element signature="n#head#0;n#!!top" />
-                <element signature="e#45#91#0#HTML" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#!!top" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -489,14 +496,7 @@
       <workItem from="1600952555080" duration="1992000" />
       <workItem from="1600969402063" duration="323000" />
       <workItem from="1601007881820" duration="14039000" />
-      <workItem from="1601102587210" duration="5603000" />
-    </task>
-    <task id="LOCAL-00036" summary="default">
-      <created>1599121885942</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1599121885942</updated>
+      <workItem from="1601102587210" duration="6352000" />
     </task>
     <task id="LOCAL-00037" summary="default">
       <created>1599122976368</created>
@@ -834,11 +834,18 @@
       <option name="project" value="LOCAL" />
       <updated>1601027316244</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="default">
+      <created>1601118756275</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1601118756275</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485354000" />
+    <option name="totallyTimeSpent" value="486103000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1231,11 +1238,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="188">
+          <caret line="998" lean-forward="true" selection-start-line="998" selection-end-line="1032" selection-end-column="6" />
           <folding>
             <element signature="n#head#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#!!top" />
             <element signature="n#script#0;n#body#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#!!top" />
@@ -1245,14 +1257,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="50" column="15" lean-forward="true" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        <state relative-caret-position="103">
+          <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
           <folding>
             <element signature="n#head#0;n#!!top" />
-            <element signature="e#45#91#0#HTML" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#body#0;n#!!top" />
             <element signature="n#footer#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#!!top" />
           </folding>
         </state>
       </provider>

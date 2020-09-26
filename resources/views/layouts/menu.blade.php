@@ -50,14 +50,174 @@
 <body>
 <div id="wrap">
 
-    @include('preloader')
+    <!--Start PreLoader-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+        <div class="loader">
+            <h1>Loading...</h1>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--End PreLoader-->
 
     <!--Start Header-->
-    @include('header')
+    <header class="header-two" id="header">
+        <div class="container">
+            <a href="main.blade.php"><img class="logo2" src="{{asset('images/logo2.png')}}" alt=""></a>
+            <a href="main.blade.php"><img class="logo-dark" src="{{asset('images/logo-dark.png')}}"  alt=""></a>
+
+            <div class="cont-right">
+
+                <nav class="menu-5 nav">
+                    <ul class="wtf-menu">
+                        <li class="select-item"><a href="#.">Home</a>
+                            <ul class="submenu">
+                                <li> <a href="index.html" class="select">Home 1</a> </li>
+                                <li> <a href="index2.html">Home 2</a> </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#.">Menu</a>
+                            <ul class="submenu">
+                                <li> <a href="{{route('menu')}}">menu 1</a> </li>
+                                <li> <a href="menu2.html">menu 2</a> </li>
+                                <li> <a href="menu3.html">menu 3</a> </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="our-story.html">our story</a></li>
+
+
+                        <li class="parent"><a href="#.">Blog</a>
+
+                            <ul class="submenu">
+                                <li><a href="blog.html">blog 1</a></li>
+                                <li><a href="blog2.html">blog 2</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li><a href="#.">contact us</a>
+
+                            <ul class="submenu">
+                                <li><a href="contact-us.html">contact-us 1</a></li>
+                                <li><a href="contact-us2.html">contact-us 2</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="shop.html">online order</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="social-icons">
+                    <li><a href="#."><i class="icon-facebook-1"></i></a></li>
+                    <li><a href="#."><i class="icon-twitter-1"></i></a></li>
+                    <li><a href="#."><i class="icon-google"></i></a></li>
+                </ul>
+
+                <ul class="shop-bag">
+                    <li class="close-bag"><a class="cart-button"><i class="icon-icons163"></i> <span class="num">2</span></a></li>
+                    <li class="open-bag">
+
+                        <div class="cart-food">
+                            <div class="detail">
+                                <img src="{{asset('images/cart-food1.jpg')}}" alt="">
+                                <div class="text">
+                                    <a href="#.">Blanched Garlic</a>
+                                    <p>1 x $35.00</p>
+                                </div>
+                            </div>
+                            <a href="#." class="cross"><i class="icon-cancel2"></i></a>
+                        </div>
+
+                        <div class="cart-food">
+                            <div class="detail">
+                                <img src="{{asset('images/cart-food2.jpg')}}"  alt="">
+                                <div class="text">
+                                    <a href="#.">GREEN CHILE </a>
+                                    <p>2 x $40.00</p>
+                                </div>
+                            </div>
+                            <a href="#." class="cross"><i class="icon-cancel2"></i></a>
+                        </div>
+
+                        <div class="sub-total">
+                            <span>SUBTOTAL: <strong>$115.00</strong></span>
+                            <div class="buttons">
+                                <a href="#." class="view-cart">view cart</a>
+                                <a href="#." class="check-out">Check Out</a>
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+
+                <ul class="get-touch">
+                    <li class="contact-no"><a><i class="icon-telephone-receiver"></i> <span>+123 55 33 444</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
     <!--End Header-->
 
     <!-- Mobile Menu Start -->
-    @include('container')
+    <div class="container" id="container">
+        <div id="page">
+            <header class="header">
+                <a href="#menu"></a>
+
+            </header>
+
+            <nav id="menu">
+                <ul>
+                    <li class="select"><a href="#.">Home</a>
+                        <ul>
+                            <li class="select"> <a href="index.html">Home Page 1</a> </li>
+                            <li> <a href="index2.html">Home Page 2</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#.">Fresh Menu</a>
+                        <ul>
+                            <li> <a href="menu.html">Menu 1</a> </li>
+                            <li> <a href="menu2.html">Menu 2</a> </li>
+                            <li> <a href="menu3.html">Menu 3</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="our-story.html">Our Story</a></li>
+
+
+                    <li><a href="#.">Blog</a>
+                        <ul>
+                            <li> <a href="blog.html">Blog 1</a> </li>
+                            <li> <a href="blog2.html">Blog 2</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#.">Contact Us</a>
+                        <ul>
+                            <li> <a href="contact-us.html">Contact-us 1</a> </li>
+                            <li> <a href="contact-us2.html">Contact-us 2</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="shop.html">Order Online</a></li>
+                    <li><a href="#book-table">Book a Table</a></li>
+
+
+                </ul>
+
+
+            </nav>
+        </div>
+    </div>
     <!-- Mobile Menu End -->
 
 
@@ -454,8 +614,40 @@
     <a href="#0" class="cd-top"></a>
 </div>
 
+<div id="scripts">
+    <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
+
+    <!-- SMOOTH SCROLL -->
+    <script type="text/javascript" src="{{asset('js/scroll-desktop.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/scroll-desktop-smooth.js')}}" ></script>
+
+    <!-- START REVOLUTION SLIDER -->
+    <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}" ></script>
+
+    <!-- Paralllax background -->
+    <script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
+
+    <!-- Countdown -->
+    <script type="text/javascript"  src="{{asset('js/countdown.js')}}"></script>
+
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="{{asset('js/owl.carousel.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/cart-detail.js')}}" ></script>
+
+    <!-- Mobile Menu -->
+    <script type="text/javascript" src="{{asset('js/jquery.mmenu.min.all.js')}}" ></script>
+
+    <!-- Form Drop Dow -->
+    <script type="text/javascript" src="{{asset('js/form-dropdown.js')}}" ></script>
+
+    <!-- Date Picker and input hover -->
+    <script type="text/javascript" src="{{asset('js/classie.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/jquery-ui-1.10.3.custom.js')}}" ></script>
 
 
-@include('scripts')
+    <!-- All Scripts -->
+    <script type="text/javascript" src="{{asset('js/custom.js')}}" ></script>
+</div>
 </body>
 
