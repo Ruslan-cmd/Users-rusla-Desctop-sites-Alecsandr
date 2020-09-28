@@ -251,7 +251,7 @@
         <div class="our-menu">
             <div class="container">
 
-@foreach($specialSection['menusection'] as $menusection)
+  @foreach($specialSection['menusection'] as $menusection)
                 <div class="menu-sec">
 
                     <div class="row">
@@ -270,6 +270,9 @@
                             <div class="col-md-4">
                                 <img src="images/menu/dish-img1.jpg" alt="">
                             </div>
+
+
+
                             <div class="col-md-8">
                                 <div class="food-detail">
 
@@ -283,6 +286,10 @@
                                 </div>
 
                             </div>
+
+
+
+
 
                         </div>
 

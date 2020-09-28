@@ -19,10 +19,10 @@ class MenuController extends Controller
 
         $dish = Dish::query()
             ->inRandomOrder('dish')
-            //Запрос должен включать в себя закрузку секций этого блюда
             ->with('menuSections')
             ->with('mainSection')
             ->first();
+
 
         return [
             'dish' => $dish->dish,
