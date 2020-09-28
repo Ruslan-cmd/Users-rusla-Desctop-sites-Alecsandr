@@ -251,13 +251,13 @@
         <div class="our-menu">
             <div class="container">
 
-
+@foreach($specialSection['menusection'] as $menusection)
                 <div class="menu-sec">
 
                     <div class="row">
                         <div class="col-md-12">
                             <div class="main-title">
-                                <span>Starter</span>
+                                <span>{{$menusection}}</span>
                                 <h1>what in the beginning</h1>
                             </div>
                         </div>
@@ -270,17 +270,18 @@
                             <div class="col-md-4">
                                 <img src="images/menu/dish-img1.jpg" alt="">
                             </div>
-
                             <div class="col-md-8">
                                 <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
+
+                                    <span class="title">{{$specialSection['dish']}}<span class="price">{{$specialSection['price']}}$</span></span>
+                                    <span class="tags">
+                                        @foreach($specialSection['sections'] as $section)
+                                            {{$section}}  @if (!$loop->last) / @endif
+                                        @endforeach
+
+                                    </span>
                                 </div>
 
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$26</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
                             </div>
 
                         </div>
@@ -289,7 +290,7 @@
 
                 </div>
 
-
+@endforeach
 
                 <div class="menu-sec">
 
@@ -603,10 +604,6 @@
 
     </footer>
     <!--End Footer-->
-
-
-
-
 
 
 

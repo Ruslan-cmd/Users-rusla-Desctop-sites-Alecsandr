@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Dish;
 use App\MenuSection;
@@ -12,7 +11,7 @@ class MenuController extends Controller
     public function index()
     {
         return view('layouts/menu', [
-            'specialsection' => $this->getSectionAndDish(),
+            'specialSection' => $this->getSectionAndDish(),
         ]);
     }
     private function getSectionAndDish()
@@ -21,6 +20,7 @@ class MenuController extends Controller
         $dish = Dish::query()
             ->inRandomOrder('dish')
             //Запрос должен включать в себя закрузку секций этого блюда
+            ->with('menuSections')
             ->with('mainSection')
             ->first();
 
@@ -30,6 +30,8 @@ class MenuController extends Controller
             // pluck - берет 1 поле коллекции и по нему выводит информацию
             // коллецию моделей превращает в коллецию строк которые сформированы из атрибута section
             'sections' => $dish->menuSections()->pluck('section'),
+            'menusection' => $dish->mainSection() ->pluck('name_of_main_section')
         ];
     }
+
 }
