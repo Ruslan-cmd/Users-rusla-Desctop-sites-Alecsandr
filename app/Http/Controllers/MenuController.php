@@ -12,8 +12,8 @@ class MenuController extends Controller
     {
 
             return view('layouts/menu', [
-dd($this->getSectionAndDish()),
-  //              'specialSection' => $this->getSectionAndDish()
+              //dd($this->getSectionAndDishTest()),
+                'specialSection' => $this->getSectionAndDishTest()
         ]);
         }
 
@@ -30,30 +30,34 @@ dd($this->getSectionAndDish()),
         return [
             'dish' => $dish->dish,
             'price' => $dish->price,
-            // pluck - берет 1 поле коллекции и по нему выводит информацию
-            // коллецию моделей превращает в коллецию строк которые сформированы из атрибута section
             'sections' => $dish->menuSections()->pluck('section'),
             'menusection' => $dish->mainSection() ->pluck('name_of_main_section')
         ];
     }
+
 */
-    private function getSectionAndDish(){
 
-        $section = MainSection::query()
-            ->with('dishes')
-            ->first();
-        $dish = Dish::query()
-            ->with('menuSections')
-            ->first();
 
-        return [
-            'mainsection' => $section->name_of_main_section,
-            // pluck - берет 1 поле коллекции и по нему выводит информацию
-            // коллецию моделей превращает в коллецию строк которые сформированы из атрибута section
-            'dish' => $section->dishes()->pluck('dish'),
-            'price' =>$section->dishes()->pluck('price'),
-            'sections' => $dish->menuSections()->pluck('section'),
-        ];
+    private function getSectionAndDishTest()
+    {
+
+    MainSection::query()
+            ->inRandomOrder('name_of_main_section')
+            ->with('dishes', 'dishes.menuSections')
+            ->get();
+
     }
 
+
+
+
+    /*
+private function getSectionOfDish(){
+     $dish =  $this->getSectionAndDishTest()['dish'];
+    $dish->collect();
+        return [
+            'sections' =>$dish->menuSections()->pluck('section')
+        ];
+}
+        */
 }

@@ -251,13 +251,13 @@
         <div class="our-menu">
             <div class="container">
 
-  @foreach($specialSection['menusection'] as $menusection)
+  @foreach($specialSection as $menu)
                 <div class="menu-sec">
 
                     <div class="row">
                         <div class="col-md-12">
                             <div class="main-title">
-                                <span>{{$menusection}}</span>
+                                <span>{{$menu}}</span>
                                 <h1>what in the beginning</h1>
                             </div>
                         </div>
