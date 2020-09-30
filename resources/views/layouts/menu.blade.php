@@ -220,8 +220,6 @@
     </div>
     <!-- Mobile Menu End -->
 
-
-
     <!--Start Sub Banner-->
     <div class="sub-banner">
         <div class="container">
@@ -251,14 +249,13 @@
         <div class="our-menu">
             <div class="container">
 
-  @foreach($specialSection as $menu)
+  @foreach($specialSections as $specialSection)
                 <div class="menu-sec">
 
                     <div class="row">
                         <div class="col-md-12">
                             <div class="main-title">
-                                <span>{{$menu}}</span>
-                                <h1>what in the beginning</h1>
+                                <span>{{$specialSection->name_of_main_section}}</span>
                             </div>
                         </div>
                     </div>
@@ -268,21 +265,23 @@
                         <div class="row">
 
                             <div class="col-md-4">
-                                <img src="images/menu/dish-img1.jpg" alt="">
+                                <img  src="{{asset('images/menu/dish-img1.jpg')}}" alt="">
                             </div>
 
 
 
                             <div class="col-md-8">
                                 <div class="food-detail">
-
-                                    <span class="title">{{$specialSection['dish']}}<span class="price">{{$specialSection['price']}}$</span></span>
-                                    <span class="tags">
-                                        @foreach($specialSection['sections'] as $section)
-                                            {{$section}}  @if (!$loop->last) / @endif
-                                        @endforeach
-
+                                    @foreach($specialSection->dishes as $dish)
+                                    <span class="title">{{$dish->dish}}<span class="price">{{$dish->price}}$</span></span>  <br>
+                                        <span class="tags">
+                                    @foreach($dish->menuSections as $section)
+                                                {{$section->section}}  @if (!$loop->last) / @endif
+                                            @endforeach
                                     </span>
+                                        <br>
+                                        <br>
+                                    @endforeach
                                 </div>
 
                             </div>
@@ -298,172 +297,6 @@
                 </div>
 
 @endforeach
-
-                <div class="menu-sec">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-title">
-                                <span>Main Course</span>
-                                <h1>HOT DISHES</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-detail">
-
-                        <div class="row">
-
-
-                            <div class="col-md-8">
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$115</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$115</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$115</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$115</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4">
-                                <img src="images/menu/dish-img2.jpg" alt="">
-                                <img src="images/menu/dish-img3.jpg" alt="">
-                                <img src="images/menu/dish-img4.jpg" alt="">
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="menu-sec">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-title">
-                                <span>Soups & Salads</span>
-                                <h1>SIDE DISHES</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-detail">
-
-                        <div class="row">
-
-                            <div class="col-md-4">
-                                <img src="images/menu/dish-img5.jpg" alt="">
-                            </div>
-
-                            <div class="col-md-8">
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$26</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="menu-sec last">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-title">
-                                <span>Drinks & Desserts</span>
-                                <h1>MOST DELICIOUS</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-detail">
-
-                        <div class="row">
-
-
-                            <div class="col-md-8">
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$26</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$26</span></span>
-                                    <span class="tags">Chicken   /   Grapes   /   Pizza   /   Cheese   /   Herbs</span>
-                                </div>
-
-                                <div class="food-detail">
-                                    <span class="title">Blue Cheese Crackers with Grapes <span class="price">$12</span></span>
-                                    <span class="tags">Italian Sausage Soup with Tortellini</span>
-                                </div>
-
-
-                            </div>
-
-                            <div class="col-md-4">
-                                <img src="images/menu/dish-img6.jpg" alt="">
-                                <img src="images/menu/dish-img7.jpg" alt="">
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
 
             </div>
         </div>

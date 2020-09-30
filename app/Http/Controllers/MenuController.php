@@ -12,8 +12,8 @@ class MenuController extends Controller
     {
 
             return view('layouts/menu', [
-              //dd($this->getSectionAndDishTest()),
-                'specialSection' => $this->getSectionAndDishTest()
+             // dd($this->getSectionAndDishTest()),
+                'specialSections' => $this->getSectionAndDishTest()
         ]);
         }
 
@@ -41,7 +41,7 @@ class MenuController extends Controller
     private function getSectionAndDishTest()
     {
 
-    MainSection::query()
+     return MainSection::query()
             ->inRandomOrder('name_of_main_section')
             ->with('dishes', 'dishes.menuSections')
             ->get();
