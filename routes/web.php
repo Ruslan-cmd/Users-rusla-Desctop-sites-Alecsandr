@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 Route::get( '/', 'SiteController@index');
 Route::post('reserve-table', 'TableReservationController@store')->name('reserve-table');
 Route::get ('menu','MenuController@index')->name('menu');
-
+Route::get('contact','ContactController@index')->name('contact');

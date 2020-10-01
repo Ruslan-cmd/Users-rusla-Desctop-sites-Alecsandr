@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <link rel="icon" type="image/png"  href="{{asset('images/favicon-pearl.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('images/favicon-pearl.png')}}">
 
     <!--main file-->
-    <link  href="{{asset('css/pearl-restaurant.css')}}"  rel="stylesheet" type="text/css">
+    <link href="{{asset('css/pearl-restaurant.css')}}" rel="stylesheet" type="text/css">
 
     <!--Medical Guide Icons-->
-    <link  href="{{asset('fonts/pearl-icons.css')}}"  rel="stylesheet" type="text/css">
+    <link href="{{asset('fonts/pearl-icons.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Default Color-->
-    <link href="{{asset('css/default-color.css')}}"  rel="stylesheet" id="color"  type="text/css">
+    <link href="{{asset('css/default-color.css')}}" rel="stylesheet" id="color" type="text/css">
 
     <!--bootstrap-->
-    <link href="{{asset('css/bootstrap.css')}}"  rel="stylesheet" type="text/css">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css">
 
     <!--Dropmenu-->
     <link href="{{asset('css/dropmenu.css')}}" rel="stylesheet" type="text/css">
@@ -43,7 +43,7 @@
     <link href="{{asset('css/form-dropdown.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Mobile Menu -->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.mmenu.all.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.mmenu.all.css')}}"/>
     <!--PreLoader-->
     <link href="{{asset('css/loader.css')}}" rel="stylesheet" type="text/css">
 </head>
@@ -66,7 +66,7 @@
     <header class="header-two" id="header">
         <div class="container">
             <a href="main.blade.php"><img class="logo2" src="{{asset('images/logo2.png')}}" alt=""></a>
-            <a href="main.blade.php"><img class="logo-dark" src="{{asset('images/logo-dark.png')}}"  alt=""></a>
+            <a href="main.blade.php"><img class="logo-dark" src="{{asset('images/logo-dark.png')}}" alt=""></a>
 
             <div class="cont-right">
 
@@ -74,16 +74,16 @@
                     <ul class="wtf-menu">
                         <li class="select-item"><a href="#.">Home</a>
                             <ul class="submenu">
-                                <li> <a href="index.html" class="select">Home 1</a> </li>
-                                <li> <a href="index2.html">Home 2</a> </li>
+                                <li><a href="index.html" class="select">Home 1</a></li>
+                                <li><a href="index2.html">Home 2</a></li>
                             </ul>
                         </li>
 
                         <li><a href="#.">Menu</a>
                             <ul class="submenu">
-                                <li> <a href="{{route('menu')}}">menu 1</a> </li>
-                                <li> <a href="menu2.html">menu 2</a> </li>
-                                <li> <a href="menu3.html">menu 3</a> </li>
+                                <li><a href="{{route('menu')}}">menu 1</a></li>
+                                <li><a href="menu2.html">menu 2</a></li>
+                                <li><a href="menu3.html">menu 3</a></li>
                             </ul>
                         </li>
 
@@ -120,7 +120,8 @@
                 </ul>
 
                 <ul class="shop-bag">
-                    <li class="close-bag"><a class="cart-button"><i class="icon-icons163"></i> <span class="num">2</span></a></li>
+                    <li class="close-bag"><a class="cart-button"><i class="icon-icons163"></i> <span
+                                class="num">2</span></a></li>
                     <li class="open-bag">
 
                         <div class="cart-food">
@@ -136,7 +137,7 @@
 
                         <div class="cart-food">
                             <div class="detail">
-                                <img src="{{asset('images/cart-food2.jpg')}}"  alt="">
+                                <img src="{{asset('images/cart-food2.jpg')}}" alt="">
                                 <div class="text">
                                     <a href="#.">GREEN CHILE </a>
                                     <p>2 x $40.00</p>
@@ -158,7 +159,8 @@
                 </ul>
 
                 <ul class="get-touch">
-                    <li class="contact-no"><a><i class="icon-telephone-receiver"></i> <span>+123 55 33 444</span></a></li>
+                    <li class="contact-no"><a><i class="icon-telephone-receiver"></i> <span>+123 55 33 444</span></a>
+                    </li>
                 </ul>
 
             </div>
@@ -179,15 +181,15 @@
                 <ul>
                     <li class="select"><a href="#.">Home</a>
                         <ul>
-                            <li class="select"> <a href="index.html">Home Page 1</a> </li>
-                            <li> <a href="index2.html">Home Page 2</a> </li>
+                            <li class="select"><a href="index.html">Home Page 1</a></li>
+                            <li><a href="index2.html">Home Page 2</a></li>
                         </ul>
                     </li>
                     <li><a href="#.">Fresh Menu</a>
                         <ul>
-                            <li> <a href="menu.html">Menu 1</a> </li>
-                            <li> <a href="menu2.html">Menu 2</a> </li>
-                            <li> <a href="menu3.html">Menu 3</a> </li>
+                            <li><a href="menu.html">Menu 1</a></li>
+                            <li><a href="menu2.html">Menu 2</a></li>
+                            <li><a href="menu3.html">Menu 3</a></li>
                         </ul>
                     </li>
 
@@ -196,15 +198,15 @@
 
                     <li><a href="#.">Blog</a>
                         <ul>
-                            <li> <a href="blog.html">Blog 1</a> </li>
-                            <li> <a href="blog2.html">Blog 2</a> </li>
+                            <li><a href="blog.html">Blog 1</a></li>
+                            <li><a href="blog2.html">Blog 2</a></li>
                         </ul>
                     </li>
 
                     <li><a href="#.">Contact Us</a>
                         <ul>
-                            <li> <a href="contact-us.html">Contact-us 1</a> </li>
-                            <li> <a href="contact-us2.html">Contact-us 2</a> </li>
+                            <li><a href="contact-us.html">Contact-us 1</a></li>
+                            <li><a href="contact-us2.html">Contact-us 2</a></li>
                         </ul>
                     </li>
 
@@ -242,72 +244,63 @@
     <!--End Sub Banner-->
 
 
-
     <!--Start Content-->
     <div class="content">
 
         <div class="our-menu">
             <div class="container">
 
-  @foreach($specialSections as $specialSection)
-                <div class="menu-sec">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-title">
-                                <span>{{$specialSection->name_of_main_section}}</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-detail">
+                @foreach($specialSections as $specialSection)
+                    <div class="menu-sec">
 
                         <div class="row">
-
-                            <div class="col-md-4">
-                                <img  src="{{asset('images/menu/dish-img1.jpg')}}" alt="">
+                            <div class="col-md-12">
+                                <div class="main-title">
+                                    <span>{{$specialSection->name_of_main_section}}</span>
+                                </div>
                             </div>
+                        </div>
 
+                        <div class="menu-detail">
 
+                            <div class="row">
 
-                            <div class="col-md-8">
-                                <div class="food-detail">
-                                    @foreach($specialSection->dishes as $dish)
-                                    <span class="title">{{$dish->dish}}<span class="price">{{$dish->price}}$</span></span>  <br>
-                                        <span class="tags">
-                                    @foreach($dish->menuSections as $section)
-                                                {{$section->section}}  @if (!$loop->last) / @endif
-                                            @endforeach
-                                    </span>
-                                        <br>
-                                        <br>
-                                    @endforeach
+                                <div class="col-md-4">
+                                    <img src="{{asset('images/menu/dish-img1.jpg')}}" alt="">
                                 </div>
 
+
+                                <div class="col-md-8">
+                                    <div class="food-detail">
+                                        @foreach($specialSection->dishes as $dish)
+                                            <span class="title">{{$dish->dish}}<span
+                                                    class="price">{{$dish->price}}$</span></span>  <br>
+                                            <span class="tags">
+                                    @foreach($dish->menuSections as $section)
+                                                    {{$section->section}}  @if (!$loop->last) / @endif
+                                                @endforeach
+                                    </span>
+                                            <br>
+                                            <br>
+                                        @endforeach
+                                    </div>
+
+                                </div>
+
+
                             </div>
-
-
-
-
 
                         </div>
 
                     </div>
 
-                </div>
-
-@endforeach
+                @endforeach
 
             </div>
         </div>
 
     </div>
     <!--End Content-->
-
-
-
-
-
 
 
     <!--Start Footer-->
@@ -332,9 +325,11 @@
                             <div class="detail">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean ac.</p>
                                 <ul>
-                                    <li class="phone"><i class="icon-telephone"></i> <span>+123 55 33 444 888</span></li>
+                                    <li class="phone"><i class="icon-telephone"></i> <span>+123 55 33 444 888</span>
+                                    </li>
                                     <li class="email"><i class="icon-email-1"></i> <span>Help@pearl.com</span></li>
-                                    <li class="location"><i class="icon-home"></i> <span>329 Queensberry Street, North Me bourne, Australia.</span></li>
+                                    <li class="location"><i class="icon-home"></i> <span>329 Queensberry Street, North Me bourne, Australia.</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -361,12 +356,18 @@
                         <div class="instagram">
                             <h4>Instagram</h4>
                             <div class="detail">
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img1.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img2.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img3.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img4.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img5.jpg" alt=""></a></div>
-                                <div class="col-md-4"><a href="#."><img src="images/instagram-img6.jpg" alt=""></a></div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img1.jpg" alt=""></a>
+                                </div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img2.jpg" alt=""></a>
+                                </div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img3.jpg" alt=""></a>
+                                </div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img4.jpg" alt=""></a>
+                                </div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img5.jpg" alt=""></a>
+                                </div>
+                                <div class="col-md-4"><a href="#."><img src="images/instagram-img6.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -376,7 +377,6 @@
             </div>
 
 
-
             <div class="about-pearl">
 
                 <div class="row">
@@ -384,7 +384,9 @@
                     <div class="col-md-12">
                         <div class="about-detail">
                             <h5>About Pearl</h5>
-                            <p>PEARL is an Lorem ipsum porta placerat rutrum aliquet platea accumsan, molestie eros aliquet adipiscing egestas ultrices, leo convallis dolor nisl integer potenti fringilla aenean condimentum ipsum maecenas aliquet consectetur.</p>
+                            <p>PEARL is an Lorem ipsum porta placerat rutrum aliquet platea accumsan, molestie eros
+                                aliquet adipiscing egestas ultrices, leo convallis dolor nisl integer potenti fringilla
+                                aenean condimentum ipsum maecenas aliquet consectetur.</p>
                         </div>
                     </div>
 
@@ -407,9 +409,14 @@
                             <h5>Newsletter</h5>
 
                             <div class="field">
-                                <p id="nws_success_msg" class="success_msg" style="display:none">Thank You for subscribing.</p>
+                                <p id="nws_success_msg" class="success_msg" style="display:none">Thank You for
+                                    subscribing.</p>
                                 <form name="newsletter_form" id="newsletter_form" method="post" onSubmit="return false">
-                                    <input name="nws_email_address" id="nws_email_address" type="text" onKeyPress="remove_newsletter_errors();" onblur="if(this.value == '') { this.value='Enter your e-mail address'}" onfocus="if (this.value == 'Enter your e-mail address') {this.value=''}" value="Enter your e-mail address">
+                                    <input name="nws_email_address" id="nws_email_address" type="text"
+                                           onKeyPress="remove_newsletter_errors();"
+                                           onblur="if(this.value == '') { this.value='Enter your e-mail address'}"
+                                           onfocus="if (this.value == 'Enter your e-mail address') {this.value=''}"
+                                           value="Enter your e-mail address">
                                     <a href="#." onClick="validateNewsletter();"><i class="icon-icons208"></i></a>
                                 </form>
                             </div>
@@ -423,7 +430,6 @@
             </div>
 
         </div>
-
 
 
         <div class="copyrights">
@@ -446,8 +452,6 @@
     <!--End Footer-->
 
 
-
-
     <a href="#0" class="cd-top"></a>
 </div>
 
@@ -455,36 +459,36 @@
     <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
     <!-- SMOOTH SCROLL -->
-    <script type="text/javascript" src="{{asset('js/scroll-desktop.js')}}" ></script>
-    <script type="text/javascript" src="{{asset('js/scroll-desktop-smooth.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/scroll-desktop.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/scroll-desktop-smooth.js')}}"></script>
 
     <!-- START REVOLUTION SLIDER -->
-    <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}" ></script>
-    <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}"></script>
 
     <!-- Paralllax background -->
     <script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
 
     <!-- Countdown -->
-    <script type="text/javascript"  src="{{asset('js/countdown.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/countdown.js')}}"></script>
 
     <!-- Owl Carousel -->
-    <script type="text/javascript" src="{{asset('js/owl.carousel.js')}}" ></script>
-    <script type="text/javascript" src="{{asset('js/cart-detail.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/owl.carousel.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/cart-detail.js')}}"></script>
 
     <!-- Mobile Menu -->
-    <script type="text/javascript" src="{{asset('js/jquery.mmenu.min.all.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/jquery.mmenu.min.all.js')}}"></script>
 
     <!-- Form Drop Dow -->
-    <script type="text/javascript" src="{{asset('js/form-dropdown.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/form-dropdown.js')}}"></script>
 
     <!-- Date Picker and input hover -->
-    <script type="text/javascript" src="{{asset('js/classie.js')}}" ></script>
-    <script type="text/javascript" src="{{asset('js/jquery-ui-1.10.3.custom.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/classie.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery-ui-1.10.3.custom.js')}}"></script>
 
 
     <!-- All Scripts -->
-    <script type="text/javascript" src="{{asset('js/custom.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
 </div>
 </body>
 

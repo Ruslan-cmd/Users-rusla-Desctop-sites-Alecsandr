@@ -104,7 +104,7 @@
                         <li><a href="#.">contact us</a>
 
                             <ul class="submenu">
-                                <li><a href="contact-us.html">contact-us 1</a></li>
+                                <li><a href="{{route('contact')}}">contact-us 1</a></li>
                                 <li><a href="contact-us2.html">contact-us 2</a></li>
                             </ul>
 

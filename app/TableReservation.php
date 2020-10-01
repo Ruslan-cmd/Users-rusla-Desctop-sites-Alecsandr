@@ -8,10 +8,7 @@ class TableReservation extends Model
 {
    protected  $guarded =[];
    protected $casts =[
-
        'persons_count' => 'integer',
        'date' =>'date',
-
-
    ];
 }
