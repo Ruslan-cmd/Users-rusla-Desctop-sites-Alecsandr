@@ -12,7 +12,7 @@ class ContactController extends Controller
     {
 
         return view('layouts/contact_form',  [
-            $this->store(),
+           // $this->store(),
         ]);
     }
     public function store()
@@ -25,8 +25,9 @@ class ContactController extends Controller
                 'message',
             ]));
         //with - с каким сообщением нужно вернуться
-        return redirect()->back('#reservation_table_form')->with('Reservation_status','Спасибо! Мы свяэемся с вами как можно скорее...');
+        return redirect()->back('#contact_form')->with('Contact_status','Спасибо! Ваше обращение отправлено');
     }
+
 
     private function validateRequest(){
         //глобальная функция находится в глобальном пространстве имен
@@ -43,7 +44,7 @@ class ContactController extends Controller
             ], [
                 'name.required' => 'Необходимо указать имя',
                 'email.required' => 'Необходимо указать email',
-                'message' => 'Поле сообщения не может быть пустым',
+                'message.required' => 'Поле сообщения не может быть пустым',
             ])->validate();
     }
 }
