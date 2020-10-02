@@ -8,13 +8,7 @@ use App\Contact;
 
 class ContactController extends Controller
 {
-    public function index()
-    {
 
-        return view('layouts/contact_form',  [
-           // $this->store(),
-        ]);
-    }
     public function store()
     {
         $this->validateRequest();
@@ -25,7 +19,7 @@ class ContactController extends Controller
                 'message',
             ]));
         //with - с каким сообщением нужно вернуться
-        return redirect()->back('#contact_form')->with('Contact_status','Спасибо! Ваше обращение отправлено');
+        return redirect()->back('#contact_table_form')->with('Contact_status','Спасибо! Ваше обращение отправлено');
     }
 
 
