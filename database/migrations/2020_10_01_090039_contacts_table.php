@@ -8,7 +8,7 @@ class ContactsTable extends Migration
 {
     public function up()
     {
-        Schema::create('table_reservations', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('name')->index();
             $table->string('email');

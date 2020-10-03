@@ -6,7 +6,7 @@ use App\Form;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 
-class FormController extends Controller
+class FormControllerNOTUSED extends Controller
 {
 
     public function index(Request $req)

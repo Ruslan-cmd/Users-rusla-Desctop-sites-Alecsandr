@@ -1,4 +1,4 @@
-<head>
+<head id="head">
     <title>Welcome to Pearl</title>
 
     <meta name="keywords" content="">
@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <link rel="icon" type="image/png" href="images/favicon-pearl.png">
+    <link rel="icon" type="image/png"  href="{{asset('images/favicon-pearl.png')}}">
 
     <!--main file-->
-    <link href="css/pearl-restaurant.css" rel="stylesheet" type="text/css">
+    <link  href="{{asset('css/pearl-restaurant.css')}}"  rel="stylesheet" type="text/css">
 
     <!--Medical Guide Icons-->
-    <link href="fonts/pearl-icons.css" rel="stylesheet" type="text/css">
+    <link  href="{{asset('fonts/pearl-icons.css')}}"  rel="stylesheet" type="text/css">
 
     <!-- Default Color-->
-    <link href="css/default-color.css" rel="stylesheet" id="color"  type="text/css">
+    <link href="{{asset('css/default-color.css')}}"  rel="stylesheet" id="color"  type="text/css">
 
     <!--bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/bootstrap.css')}}"  rel="stylesheet" type="text/css">
 
     <!--Dropmenu-->
-    <link href="css/dropmenu.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/dropmenu.css')}}" rel="stylesheet" type="text/css">
 
     <!--Sticky Header-->
-    <link href="css/sticky-header.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/sticky-header.css')}}" rel="stylesheet" type="text/css">
 
     <!--Sticky Countdown-->
-    <link href="css/countdown.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/countdown.css')}}" rel="stylesheet" type="text/css">
 
     <!--revolution-->
-    <link href="css/settings.css" rel="stylesheet" type="text/css">
-    <link href="css/extralayers.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/settings.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/extralayers.css')}}" rel="stylesheet" type="text/css">
 
     <!--Owl Carousel-->
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Date Picker-->
+    <link href="{{asset('css/date-pick.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Form Dropdown-->
+    <link href="{{asset('css/form-dropdown.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Mobile Menu -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
-
-
+    <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.mmenu.all.css')}}" />
     <!--PreLoader-->
-    <link href="css/loader.css" rel="stylesheet" type="text/css">
-
-
+    <link href="{{asset('css/loader.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -77,7 +79,7 @@
                     <ul class="wtf-menu">
                         <li><a href="#.">Home</a>
                             <ul class="submenu">
-                                <li> <a href="index.html">Home 1</a> </li>
+                                <li> <a href="{{route('main')}}">Home 1</a> </li>
                                 <li> <a href="index2.html">Home 2</a> </li>
                             </ul>
                         </li>
