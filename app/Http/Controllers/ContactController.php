@@ -19,7 +19,7 @@ class ContactController extends Controller
                 'message',
             ]));
 
-        return redirect()->back('#contact_table_form')->with('Contact_status','Спасибо! Ваше обращение отправлено');
+        return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено');
     }
 
 
