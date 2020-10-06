@@ -21,7 +21,8 @@ class ContactController extends Controller
                 'message',
             ]));
 
-        $comment = Contact::get('message')->pluck();
+        $comment = Contact::query()
+        ->first('message');
         $toEmail = "progectruslan@gmail.com";
         Mail::to($toEmail)->send(new MailClass($comment));
         return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено на адрес: '. $toEmail);

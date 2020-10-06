@@ -19,6 +19,7 @@ class MailClass extends Mailable
 
     public function build()
     {
+        //Необходимо для вывода на отдельной станице сообщения о доставке
         return $this->view('emails.feedback');
     }
 }
