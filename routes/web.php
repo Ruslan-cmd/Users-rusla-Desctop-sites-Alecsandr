@@ -12,9 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get( '/', 'SiteController@index');
+Route::get( '/', 'SiteController@index')->name('main');
 Route::post('reserve-table', 'TableReservationController@store')->name('reserve-table');
 Route::get ('menu','MenuController@index')->name('menu');
 Route::get('contact','FormPageController@index')->name('contact');
 Route::post('contact_form', 'ContactController@store')->name('contact_form');
-Route::get('send', 'MailController@send')->name('send');
+//Route::get('send', 'MailController@send')->name('send');
+Route::get('/send-email', 'MailController@send');
