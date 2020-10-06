@@ -18,27 +18,6 @@ class MenuController extends Controller
         ]);
     }
 
-    /* private function getSectionAndDish()
-     {
-
-         $dish = Dish::query()
-             ->inRandomOrder('dish')
-             ->with('menuSections')
-             ->with('mainSection')
-             ->first();
-
-
-         return [
-             'dish' => $dish->dish,
-             'price' => $dish->price,
-             'sections' => $dish->menuSections()->pluck('section'),
-             'menusection' => $dish->mainSection() ->pluck('name_of_main_section')
-         ];
-     }
-
- */
-
-
     private function getSectionAndDishTest()
     {
 
@@ -49,14 +28,4 @@ class MenuController extends Controller
 
     }
 
-
-    /*
-private function getSectionOfDish(){
-     $dish =  $this->getSectionAndDishTest()['dish'];
-    $dish->collect();
-        return [
-            'sections' =>$dish->menuSections()->pluck('section')
-        ];
-}
-        */
 }

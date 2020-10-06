@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MailClass;
 
 class ContactController extends Controller
 {
@@ -19,7 +21,10 @@ class ContactController extends Controller
                 'message',
             ]));
 
-        return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено');
+        $comment = Contact::get('message')->pluck();
+        $toEmail = "progectruslan@gmail.com";
+        Mail::to($toEmail)->send(new MailClass($comment));
+        return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено на адрес: '. $toEmail);
     }
 
 
@@ -40,5 +45,12 @@ class ContactController extends Controller
                 'email.required' => 'Необходимо указать email',
                 'message.required' => 'Поле сообщения не может быть пустым',
             ])->validate();
+    }
+    public function send()
+    {
+        $comment = 'Это сообщение отправлено из формы обратной связи';
+        $toEmail = "progectruslan@gmail.com";
+        Mail::to($toEmail)->send(new MailClass($comment));
+        return 'Сообщение отправлено на адрес ' . $toEmail;
     }
 }
