@@ -110,7 +110,7 @@
 
                         </li>
 
-                        <li><a href="shop.html">online order</a></li>
+                        <li><a href="{{route('shop_page')}}">online order</a></li>
                     </ul>
                 </nav>
 

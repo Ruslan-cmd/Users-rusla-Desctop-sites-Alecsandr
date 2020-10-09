@@ -24,7 +24,7 @@ class ContactController extends Controller
         $comment = Contact::query()
         ->pluck('message')
         ->last();
-        $toEmail = "bakautovalex@gmail.com";
+        $toEmail = "annabaklanova1995@mail.ru";
         Mail::to($toEmail)->send(new MailClass($comment));
         return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено на адрес: '. $toEmail);
     }

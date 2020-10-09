@@ -17,5 +17,5 @@ Route::post('reserve-table', 'TableReservationController@store')->name('reserve-
 Route::get ('menu','MenuController@index')->name('menu');
 Route::get('contact','FormPageController@index')->name('contact');
 Route::post('contact_form', 'ContactController@store')->name('contact_form');
-//Route::get('send', 'MailController@send')->name('send');
 Route::get('/send-email', 'MailController@send');
+Route::get('shop_page', 'ShopController@index')->name('shop_page');
