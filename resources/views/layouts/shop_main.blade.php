@@ -268,13 +268,10 @@
 
             <!--Start Foods-->
             <div class="cbp-panel" style="max-width:1170px;">
-
+                @foreach($specialSections as $specialSection)
                 <div id="filters-container" class="cbp-l-filters-list ">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-l-filters-list-first">ALL PRODUCTS</div>
-                    <div data-filter=".starters" class="cbp-filter-item">STARTERS</div>
-                    <div data-filter=".mains" class="cbp-filter-item">MAINS</div>
-                    <div data-filter=".salads" class="cbp-filter-item cbp-l-filters-list-last">SALADS</div>
-                </div>
+                     <div data-filter=".starters" class="cbp-filter-item">{{$specialSection->name_of_main_section}}</div>
+                      </div>
 
                 <div id="grid-container" class="cbp shop-gallery">
 
@@ -285,7 +282,7 @@
                         <a href="shop-detail.html">
                             <img src="images/menu/dish-img1.jpg" alt="">
                             <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
+                                <h6>нннннннннннннн</h6>
                                 <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
 
                                 <div class="price-cart">
@@ -297,146 +294,9 @@
                         </a>
 
                     </div>
-
-
-                    <div class="cbp-item mains salads">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img2.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$32.00</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item mains ">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img3.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$42.05</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item mains">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img4.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$12.25</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item mains salads">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img5.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$12.25</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item starters">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img6.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$12.25</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item starters">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img7.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$12.25</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div class="cbp-item salads">
-
-                        <a href="shop-detail.html">
-                            <img src="images/menu/dish-img8.jpg" alt="">
-                            <div class="detail">
-                                <h6>Spicy Blanched Garlic</h6>
-                                <span>Fresh<span class="dot">.</span> light<span class="dot">.</span> Mexican</span>
-
-                                <div class="price-cart">
-                                    <a href="#."><span class="price">$12.25</span></a>
-                                    <a href="#."><span class="cart">add to cart</span></a>
-                                </div>
-
-                            </div>
-                        </a>
-
-                    </div>
-
-
-
-
 
                 </div>
-
+@endforeach
             </div>
             <!--End Foods-->
 

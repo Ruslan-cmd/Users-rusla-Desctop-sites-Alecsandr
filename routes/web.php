@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get( 'main_page', 'Main_PageController@index')->name('main_page');
 Route::get( '/', 'SiteController@index')->name('main');
 Route::post('reserve-table', 'TableReservationController@store')->name('reserve-table');
 Route::get ('menu','MenuController@index')->name('menu');
