@@ -12,7 +12,7 @@ class MenuController extends Controller
     public function index()
     {
 
-        return view('layouts/menu', [
+        return view('layouts/menu_page', [
             // dd($this->getSectionAndDishTest()),
             'specialSections' => $this->getSectionAndDishTest()
         ]);
