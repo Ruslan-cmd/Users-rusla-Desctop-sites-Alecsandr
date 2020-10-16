@@ -22,7 +22,7 @@ class TableReservationController extends Controller
                 'phone',
             ]));
         //with - с каким сообщением нужно вернуться
-        return redirect()->back('#reservation_table_form')->with('Reservation_status','Спасибо! Мы свяэемся с вами как можно скорее...');
+        return redirect()->back()->with('Reservation_status','Спасибо! Мы свяэемся с вами как можно скорее...');
     }
 
   private function validateRequest(){

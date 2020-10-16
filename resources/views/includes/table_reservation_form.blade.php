@@ -1,4 +1,4 @@
-<div id="reservation_table_form" class="booking-form">
+<div id="reservation_table_form" class="booking-form" style="margin-top: 8em">
     @if ($errors->any())
         @foreach ($errors->all() as $message)
         <p class="error" style="color:red;margin-bottom:10px">
@@ -6,21 +6,21 @@
         </p>
         @endforeach
         @endif
-    @if (session('reservation_status'))
-    <p class="success" id="reserv_success_msg">{{session('reservation_status')}}</p>
+    @if (session('Reservation_status'))
+    <p class="success" id="reserv_success_msg">{{session('Reservation_status')}}</p>
     @endif
-    <form  method="post" action="{{route('reserve-table')}}">
+    <form  method="post" action="{{route('reserve-table')}} ">
     @csrf
-<div class="col-md-6"><div class="field">
-        <input name="name" type="text"  value="{{old('name' , 'Введите имя') }}"></div></div>
+<div class="col-md-6"><div class="field" >
+        <input style="padding: 10px" name="name" type="text"   placeholder="Введите имя" value="{{old('name')}}"></div></div>
 
 <div class="col-md-6"><div class="field">
-        <input type="text"   placeholder="Желаемая дата" name="date" value="{{old('date' , 'Введите желаемую дату')}}"/>
+        <input style="padding: 10px" type="text"   placeholder="Желаемая дата" name="date" value="{{old('date')}}"/>
     </div></div>
 
-<div class="col-md-6"><div class="field basic-example2">
-        <select class="basic-example"  name="time_period">
-            <option value="">Выберите время</option>
+<div  style="padding: 10px" class="col-md-6"><div class="field basic-example2">
+        <select  class="basic-example"  name="time_period">
+            <option value="" style="padding: 10px">Выберите время</option>
 
             <option @if(old('time_period') === '9:00am to 12:00pm') selected @endif value="9:00am to 12:00pm">9:00 - 12:00</option>
             <option @if(old('time_period') === '12:00pm to 3:00pm') selected @endif value="12:00pm to 3:00pm">12:00 - 3:00</option>
@@ -29,7 +29,7 @@
             <option @if(old('time_period') === '9:00pm to 12:00am') selected @endif value="9:00pm to 12:00am">9:00 - 12:00</option>
         </select>
     </div></div>
-<div class="col-md-6"><div class="field">
+<div style="padding: 10px" class="col-md-6"><div class="field">
         <select class="basic-example" name="persons_count">
             <option value="">Колличество персон</option>
             <option @if(old('persons_count') === '1') selected @endif value="1">1</option>
@@ -39,15 +39,15 @@
             <option @if(old('persons_count') === '5') selected @endif value="5">5+</option>
         </select>
     </div></div>
-<div class="col-md-6"><div class="field"><input name="email" type="text" placeholder="Email" value="{{old('email' , 'Введите email')}}"></div></div>
+<div class="col-md-6"><div class="field"><input style="padding: 10px" name="email" type="text" placeholder="Введите email" value="{{old('email')}}"></div></div>
 
  <div class="col-md-6">
      <div class = "field">
-         <input name="phone" type="text" placeholder="Телефон" value="{{old('phone' , 'Введите телефон')}}"></div>
+         <input style="padding: 10px" name="phone" type="text" placeholder="Введите телефон" value="{{old('phone')}}"></div>
  </div>
 
 
-<input type="submit" value="Забронировать">
+<input style="padding: 10px" type="submit" value="Забронировать">
 </form>
 
 </div>

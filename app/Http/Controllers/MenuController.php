@@ -25,7 +25,6 @@ class MenuController extends Controller
             ->inRandomOrder('name_of_main_section')
             ->with('dishes', 'dishes.menuSections')
             ->get();
-
     }
 
 }
