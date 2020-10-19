@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Composer\EventDispatcher\Event;
 use Illuminate\Http\Request;
 use Validator;
 use App\Contact;
@@ -24,9 +25,20 @@ class ContactController extends Controller
         $comment = Contact::query()
         ->pluck('message')
         ->last();
-        $toEmail = "annabaklanova1995@mail.ru";
-        Mail::to($toEmail)->send(new MailClass($comment));
+        $fromEmail = Contact::query()
+            ->pluck('email')
+            ->last();
+        $name = Contact::query()
+            ->pluck('name')
+            ->last();
+
+        $toEmail = "progectruslan@gmail.com";
+        Mail::to($toEmail)->send(new MailClass($name));
+        Mail::to($fromEmail)->send(new MailClass('Спасибо за обращение, ваша заявка взята в работу '));
         return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено на адрес: '. $toEmail);
+
+
+
     }
 
 

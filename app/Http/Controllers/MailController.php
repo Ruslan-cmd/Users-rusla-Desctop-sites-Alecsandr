@@ -12,6 +12,7 @@ class MailController extends Controller
         $comment = 'Это сообщение отправлено из формы обратной связи';
         $toEmail = "progectruslan@gmail.com";
         Mail::to($toEmail)->send(new MailClass($comment));
+
         return 'Сообщение отправлено на адрес ' . $toEmail;
     }
 }

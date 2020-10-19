@@ -78,12 +78,14 @@
         </form>
     </div>
 </nav>
-
+<h1>Форма регистрации</h1>
 <main role="main" class="container">
 
-    <div class="starter-template">
+    <div>
+        <h1>Форма бронирования стола</h1>
         @include('includes.reservation_form')
-        <h1>Форма регистрации</h1>
+        <h1>Форма отправки отзыва</h1>
+        @include('includes.table_contact_form')
     </div>
 
 </main><!-- /.container -->
