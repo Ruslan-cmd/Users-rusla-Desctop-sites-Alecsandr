@@ -54,11 +54,11 @@
         </div>
     </div>
 </header>
-<p style="font-size:4em">Предстоящие события</p>
+
 <main role="main">
     <div class="album py-5 bg-light">
         <div class="container">
-
+            <p style="font-size:4em">Предстоящие события</p>
             <div class="row">
                 @foreach($events as $event)
 
@@ -82,6 +82,32 @@
                 </div>
  @endforeach
             </div>
+            <p style="font-size:4em">События, которые прошли</p>
+            <div class="row">
+                @foreach($events1 as $event)
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">{{$event->title}}</p>
+                                <p class="card-text">Организатор мероприятия: {{$event->organizer}}</p>
+                                <p class="card-text">Дата события: {{$event->date}}</p>
+                                <p class="card-text">Стоимость: {{$event->price}} рублей</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+
+            </div>
+            {{($events1->render())}}
         </div>
     </div>
 
