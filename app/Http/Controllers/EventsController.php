@@ -10,17 +10,17 @@ class EventsController extends Controller
 {
     public function index()
     {
+
         return view('layouts/events', [
             'events' => $this->getEvent(),
             'events1' => $this->getEvent1(),
         ]);
     }
 private function getEvent(){
-       return  Event::query()
+    return  Event::query()
         ->where('date', '>=', now())
            ->orderByDesc('date')
         ->get();
-
 }
     private function getEvent1()
     {
