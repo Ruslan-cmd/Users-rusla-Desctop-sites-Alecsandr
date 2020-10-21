@@ -55,10 +55,10 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('events')}}">Предстоящие и прошедшие события<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="{{route('menu_page')}}}">Меню ресторана</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -78,11 +78,10 @@
         </form>
     </div>
 </nav>
-<h1>Форма регистрации</h1>
-<main role="main" class="container">
+<main role="main">
 
     <div>
-        <h1>Форма бронирования стола</h1>
+        <h1 style="margin-top:50px">Форма бронирования стола</h1>
         @include('includes.reservation_form')
         <h1>Форма отправки отзыва</h1>
         @include('includes.table_contact_form')

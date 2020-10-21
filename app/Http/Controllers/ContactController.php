@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Composer\EventDispatcher\Event;
 use Illuminate\Http\Request;
 use Validator;
@@ -36,12 +35,7 @@ class ContactController extends Controller
         Mail::to($toEmail)->send(new MailClass($name));
         Mail::to($fromEmail)->send(new MailClass('Спасибо за обращение, ваша заявка взята в работу '));
         return redirect()->back()->with('Contact_status','Спасибо! Ваше обращение отправлено на адрес: '. $toEmail);
-
-
-
     }
-
-
     private function validateRequest(){
         //глобальная функция находится в глобальном пространстве имен
         Validator::make(\request()->only(
@@ -60,11 +54,5 @@ class ContactController extends Controller
                 'message.required' => 'Поле сообщения не может быть пустым',
             ])->validate();
     }
-   /* public function send()
-    {
-        $comment = 'Это сообщение отправлено из формы обратной связи';
-        $toEmail = "progectruslan@gmail.com";
-        Mail::to($toEmail)->send(new MailClass($comment));
-        return 'Сообщение отправлено на адрес ' . $toEmail;
-    }*/
+
 }
