@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 use App\Dish;
 use App\MenuSection;
 use App\MainSection;
-
 class MenuController extends Controller
 {
     public function index()
     {
-
+        //$value = $request->session()->get('key', 'default');
         return view('layouts/menu_page', [
             // dd($this->getSectionAndDishTest()),
             'specialSections' => $this->getSectionAndDishTest()
+
         ]);
     }
 
@@ -26,5 +26,9 @@ class MenuController extends Controller
             ->with('dishes', 'dishes.menuSections')
             ->get();
     }
+    public function show(Request $request, $id)
+    {
+        $value = $request->session()->get('key');
 
+    }
 }
