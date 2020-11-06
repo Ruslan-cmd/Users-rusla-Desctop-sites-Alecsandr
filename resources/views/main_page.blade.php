@@ -46,31 +46,28 @@
     <link href="{{asset('starter-template.css')}}" rel="stylesheet">
 </head>
 <body>
+<header>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Администрационная панель</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('events')}}">Предстоящие и прошедшие события<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('menu_page')}}}">Меню ресторана</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('main_page')}}">Бронирование и обратная связь<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="{{route('menu_page')}}">Меню ресторана</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <a class="nav-link" href="#">Корзина продуктов <span class="badge badge-secondary">2</span></a>
+
             </li>
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -78,9 +75,11 @@
         </form>
     </div>
 </nav>
+</header>
 <main role="main">
 
     <div>
+        <h1 style="margin-top: 50px;color:black;font-size: 50px">Ваша сессия: {{session()->getID()}}</h1>
         <h1 style="margin-top:50px">Форма бронирования стола</h1>
         @include('includes.reservation_form')
         <h1>Форма отправки отзыва</h1>

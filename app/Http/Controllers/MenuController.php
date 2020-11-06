@@ -10,25 +10,15 @@ class MenuController extends Controller
 {
     public function index()
     {
-        //$value = $request->session()->get('key', 'default');
         return view('layouts/menu_page', [
-            // dd($this->getSectionAndDishTest()),
             'specialSections' => $this->getSectionAndDishTest()
-
         ]);
     }
-
     private function getSectionAndDishTest()
     {
-
         return MainSection::query()
             ->inRandomOrder('name_of_main_section')
             ->with('dishes', 'dishes.menuSections')
             ->get();
-    }
-    public function show(Request $request, $id)
-    {
-        $value = $request->session()->get('key');
-
     }
 }
