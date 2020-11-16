@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -35,29 +36,30 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Корзина продуктов <span class="badge badge-secondary">2</span></a>
-
+                    <a class="nav-link" href="{{route('menu_page')}}">Корзина продуктов <span class="badge badge-secondary">{{cart()->getCount()}}</span></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 </header>
-<main role="main">
-    <p style="font-size:4em;color:red;margin-top: 30px">Меню ресторана</p>
+<main role="main" style="margin-top: 5%">
+    @if(session('status'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+           {{session('status')}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        @endif
+    <p style="font-size:4em;margin-top: 30px">Меню ресторана</p>
     @foreach($specialSections as $specialSection)
         <p style="font-size:3em;color:blue">{{$specialSection->name_of_main_section}}</p>
         @foreach($specialSection->dishes as $dish)
     <div class="album py-5 bg-light">
-
         <div class="container">
             <div class="row">
                     <div class="col-md-4" >
-                        <div class="card mb-4 box-shadow" >
-                            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                        <div class="card mb-4 box-shadow">
                             <div class="card-body">
                                 <p class="card-text"></p>
                                 <p class="card-text">Блюдо: {{$dish->dish}}</p>
@@ -70,15 +72,16 @@
                                 <br>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="submit" onclick="{{route('button')}}" class="btn btn-sm btn-outline-secondary">Добавить в корзину</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <form action="{{route('cart.add', $dish)}}" method="post">
+                                            @csrf
+                                            <button type="submit" class="btn btn-sm btn-outline-secondary">Добавить в корзину</button>
+                                        </form>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
             </div>
         </div>
             @endforeach
@@ -106,3 +109,5 @@
 <script src="{{asset('../../assets/js/vendor/holder.min.js')}}"></script>
 </body>
 </html>
+
+

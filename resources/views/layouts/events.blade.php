@@ -41,8 +41,7 @@
                     <a class="nav-link" href="{{route('menu_page')}}">Меню ресторана</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Корзина продуктов <span class="badge badge-secondary">2</span></a>
-
+                    <a class="nav-link" href="{{route('menu_page')}}">Корзина продуктов <span class="badge badge-secondary">{{cart()->getCount()}}</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
