@@ -1,5 +1,5 @@
 <?php
-use app\Cart;
+use App\Cart;
 if (!function_exists('cart')){
     /**
      * @return \App\Dish

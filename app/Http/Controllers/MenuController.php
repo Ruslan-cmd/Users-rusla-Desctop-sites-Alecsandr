@@ -22,8 +22,8 @@ class MenuController extends Controller
     }
     public function addToCart(Dish $dish)
     {
-
         cart()->add($dish);
+        // dd(cart(),$dish);
         $count = cart()->getCount();
         return redirect()->back()->with('status',"В корзине {$count} блюд"); //Помещает переменную status с определенным значением в сессию
            }
