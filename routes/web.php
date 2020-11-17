@@ -25,4 +25,3 @@ Route::get ('menu','MenuController@index')->name('menu');
 Route::get('contact','FormPageController@index')->name('contact');
 Route::post('contact_form', 'ContactController@store')->name('contact_form');
 Route::get('/send-email', 'MailController@send');
-Route::get('shop_page', 'ShopController@index')->name('shop_page');
