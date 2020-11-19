@@ -5,7 +5,8 @@ class Cart
     private $dishes = [];
 
     public function getCount(){
-        dd($this->dishes,session('cart'));
+        //dd($this->dishes,session('cart'));
+       // dd(count($this->dishes));
         return count($this->dishes);
 
     }
@@ -20,11 +21,17 @@ class Cart
     public function add(Dish $dish){
 
         $this->dishes[] = $dish;
-        session()->put('cart', $this, count($this->dishes));
+        session()->put('cart', $this);
+
+
+
+       // dd(count($this->dishes)); Колличество корректно
         //return count($this->dishes);
       //dd(session('cart')); // сессия не пуста, корзина есть!
 //dd($this->dishes); // массив не пуст элемнты добавляются в массив
     }
+
+
     public function isEmpty(){
         return $this->getCount() == 0;
     }
