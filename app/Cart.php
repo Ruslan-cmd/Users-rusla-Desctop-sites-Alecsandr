@@ -2,7 +2,8 @@
 namespace App;
 class Cart
 {
-    private $dishes = [];
+
+   private   $dishes = [];
 
     public function getCount(){
         //dd($this->dishes,session('cart'));
@@ -14,7 +15,7 @@ class Cart
 
         return $this->dishes;
     }
-    public function clear(){
+   public function clear(){
         $this->dishes = [];
         session()->put('cart', $this);
     }

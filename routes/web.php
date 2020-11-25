@@ -17,7 +17,7 @@ Route::get( 'events', 'EventsController@index')->name('events');
 Route::get ('menu_page','MenuController@index')->name('menu_page');
 Route::post('button','ButtonController@index')->name('button');
 Route::post('cart/add/{dish}', 'MenuController@addToCart')->name('cart.add');
-
+Route::get('cart_page', 'CartController@index')->name('cart_page');
 
 Route::get( '/', 'SiteController@index')->name('main');
 Route::post('reserve-table', 'TableReservationController@store')->name('reserve-table');

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -43,47 +42,27 @@
     </nav>
 </header>
 <main role="main" style="margin-top: 5%">
-    @if(session('status'))
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-           {{session('status')}}
-        </div>
-        @endif
-    <p style="font-size:4em;margin-top: 30px">Меню ресторана</p>
-    @foreach($specialSections as $specialSection)
-        <p style="font-size:3em;color:blue">{{$specialSection->name_of_main_section}}</p>
-        @foreach($specialSection->dishes as $dish)
-    <div class="album py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-4" >
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-body">
-                                <p class="card-text"></p>
-                                <p class="card-text">Блюдо: {{$dish->dish}}</p>
-                                <p class="card-text">Стоимость блюда: {{$dish->price}} $ </p>
-                                <span class="tags">
-                                    @foreach($dish->menuSections as $section)
-                                        {{$section->section}}  @if (!$loop->last) / @endif
-                                    @endforeach
-                                    </span>
-                                <br>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <form action="{{route('cart.add', $dish)}}" method="post">
-                                            @csrf
-                                            <button type="submit" class="btn btn-sm btn-outline-secondary">Добавить в корзину</button>
-                                        </form>
-                                    </div>
 
+    <p style="font-size:4em;margin-top: 30px">Ваша корзина</p>
+
+    @foreach($arrayOfCart as $dish)
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" >
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <p class="card-text"></p>
+                                    <p class="card-text">Блюдо:</p>
+                                    <p class="card-text">Стоимость блюда:$ </p>
+                                    <br>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
-            @endforeach
-    </div>
-@endforeach
+        @endforeach
 </main>
 
 <footer class="text-muted">
