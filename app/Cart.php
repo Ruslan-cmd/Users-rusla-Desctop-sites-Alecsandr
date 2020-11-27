@@ -1,39 +1,40 @@
 <?php
+
 namespace App;
 class Cart
 {
 
-   private   $dishes = [];
+    private $dishes = [];
 
-    public function getCount(){
-        //dd($this->dishes,session('cart'));
-       // dd(count($this->dishes));
+    public function getCount()
+    {
+
         return count($this->dishes);
 
     }
-    public function getDishes(){
+
+    public function getDishes()
+    {
 
         return $this->dishes;
     }
-   public function clear(){
+
+    public function clear()
+    {
         $this->dishes = [];
         session()->put('cart', $this);
     }
-    public function add(Dish $dish){
+
+    public function add(Dish $dish)
+    {
 
         $this->dishes[] = $dish;
         session()->put('cart', $this);
 
-
-
-       // dd(count($this->dishes)); Колличество корректно
-        //return count($this->dishes);
-      //dd(session('cart')); // сессия не пуста, корзина есть!
-//dd($this->dishes); // массив не пуст элемнты добавляются в массив
     }
 
-
-    public function isEmpty(){
+    public function isEmpty()
+    {
         return $this->getCount() == 0;
     }
 }
