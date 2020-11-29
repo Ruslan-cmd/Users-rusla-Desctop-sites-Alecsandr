@@ -6,10 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 //use Spatie\MediaLibrary\HasMedia\HasMedia;
 //use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
-class Event extends Model //implements HasMedia
+class Event extends Model
 {
-    //use HasMediaTrait;
-
     protected $fillable = [
         'title',
         'date',

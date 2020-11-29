@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+
 class Cart
 {
 
@@ -8,11 +9,8 @@ class Cart
 
     public function getCount()
     {
-
         return count($this->dishes);
-
     }
-
     public function getDishes()
     {
 
@@ -27,10 +25,8 @@ class Cart
 
     public function add(Dish $dish)
     {
-
         $this->dishes[] = $dish;
         session()->put('cart', $this);
-
     }
 
     public function isEmpty()

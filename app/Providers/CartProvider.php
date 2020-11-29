@@ -14,11 +14,11 @@ class CartProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->app->singleton(Cart::class,function () {
+        $this->app->singleton(Cart::class, function() {
             if (!session()->has('cart')){
                 session()->put('cart',new Cart());
             }
             return session()->get('cart');
-       });
+        });
     }
 }
